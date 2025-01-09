@@ -7,10 +7,10 @@ from matplotlib.pyplot import figure
 from scib_metrics.benchmark import Benchmarker
 import scipy
 
-timestamp= '23122024_151117'
+timestamp= '07012025_171437'
 
 # Read data
-adata = sc.read_h5ad('integration_of_remapped_data/gut_hs_all_datasets_scVI_scANVI_epithelial_cellstates_AM_23122024_151117_raw.h5ad')
+adata = sc.read_h5ad('integration_of_remapped_data/gut_hs_all_datasets_scVI_scANVI_epithelial_cellstates_AM_07012025_171437_raw.h5ad')
 if not np.issubdtype(adata.X.dtype, np.floating):
     # If X is a sparse matrix
     if scipy.sparse.issparse(adata.X):
@@ -43,12 +43,12 @@ bm.benchmark()
 
 # Save metrics to DataFrame
 metrics_df = pd.DataFrame(bm.get_results())
-metrics_df.to_csv(f'integration_of_remapped_data/benchmark_metrics_sample_id_{timestamp}.csv')
+metrics_df.to_csv(f'integration_of_remapped_data/benchmark_metrics_epithelial_sample_id_{timestamp}.csv')
 
 # Create and save plot
 fig = plt.figure(figsize=(10, 6))
 bm.plot_results_table(min_max_scale=False)
-plt.savefig(f'integration_of_remapped_data/benchmark_metrics_sample_id_{timestamp}.png', dpi=300, bbox_inches='tight')
+plt.savefig(f'integration_of_remapped_data/benchmark_metrics_epithelial_sample_id_{timestamp}.png', dpi=300, bbox_inches='tight')
 plt.close()
 
 # Run benchmarker: batch_key = 'age_group'
@@ -63,12 +63,12 @@ bm.benchmark()
 
 # Save metrics to DataFrame
 metrics_df = pd.DataFrame(bm.get_results())
-metrics_df.to_csv(f'integration_of_remapped_data/benchmark_metric_age_group_{timestamp}.csv')
+metrics_df.to_csv(f'integration_of_remapped_data/benchmark_metrics_epithelial_age_group_{timestamp}.csv')
 
 # Create and save plot
 fig = plt.figure(figsize=(10, 6))
 bm.plot_results_table(min_max_scale=False)
-plt.savefig(f'integration_of_remapped_data/benchmark_metrics_age_group_{timestamp}.png', dpi=300, bbox_inches='tight')
+plt.savefig(f'integration_of_remapped_data/benchmark_metrics_epithelial_age_group_{timestamp}.png', dpi=300, bbox_inches='tight')
 plt.close()
 
 # Run benchmarker: batch_key = 'ArrayExpress_ID'
@@ -83,10 +83,10 @@ bm.benchmark()
 
 # Save metrics to DataFrame
 metrics_df = pd.DataFrame(bm.get_results())
-metrics_df.to_csv(f'integration_of_remapped_data/benchmark_metrics_ArrayExpress_ID_{timestamp}.csv')
+metrics_df.to_csv(f'integration_of_remapped_data/benchmark_metrics_epithelial_ArrayExpress_ID_{timestamp}.csv')
 
 # Create and save plot
 fig = plt.figure(figsize=(10, 6))
 bm.plot_results_table(min_max_scale=False)
-plt.savefig(f'integration_of_remapped_data/benchmark_metrics_ArrayExpress_ID_{timestamp}.png', dpi=300, bbox_inches='tight')
+plt.savefig(f'integration_of_remapped_data/benchmark_metrics_epithelial_ArrayExpress_ID_{timestamp}.png', dpi=300, bbox_inches='tight')
 plt.close()
