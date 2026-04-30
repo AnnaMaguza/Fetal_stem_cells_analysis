@@ -168,4 +168,4 @@ Drafts/
 
 #Env
 .env
-.h5ad
+*.h5ad
