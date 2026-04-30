@@ -1,0 +1,125 @@
+/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/louvain/__init__.py:54: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import get_distribution, DistributionNotFound
+/Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/dataset_comparison/08_raw_counts_compare.py:222: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  print((matched.groupby("cellstates_scANVI").size().sort_values(ascending=False).head(8)).to_string())
+/Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/dataset_comparison/08_raw_counts_compare.py:222: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  print((matched.groupby("cellstates_scANVI").size().sort_values(ascending=False).head(8)).to_string())
+/Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/dataset_comparison/08_raw_counts_compare.py:222: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  print((matched.groupby("cellstates_scANVI").size().sort_values(ascending=False).head(8)).to_string())
+Loading old fetal SC scvi (has counts layer) ...
+old_scvi: (7817, 7000), X dtype=float32, layers: ['counts']
+counts layer dtype: float32
+counts layer sample: [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+counts layer first cell sum: 9142.0
+
+Loading old fetal SC leiden (for cluster labels) ...
+old_scvi leiden: leiden
+0    3979
+1    3544
+2     294
+
+Loading new fetal SC subset ...
+new: (7308, 43704), X dtype=int64
+matched keys (donor + 16bp barcode): 955
+matched: old_sub (955, 7000), new_sub (955, 43704)
+
+old genes (HVG only): 7000, new genes: 43704, shared: 6089
+
+old raw counts: dtype=float32, sum/cell mean=11020, median=10507
+new raw counts: dtype=float32, sum/cell mean=16322, median=11504
+per-cell counts ratio (new/old): mean=1.438, median=0.743
+
+old genes/cell mean (HVGs only): 1179
+new genes/cell mean (HVGs only, same shared genes): 947
+
+=== Per-cell expression correlation (RAW counts → log1p(CP10K)), shared HVGs (n=955 cells sampled) ===
+  Pearson  mean=0.9000  median=0.9107  q25=0.9060  q75=0.9145
+  fraction >0.95: 0.000
+  fraction >0.99: 0.000
+
+  RAW Pearson mean=0.8303  median=0.8472
+
+per-gene log1p(CP10K) mean correlation (n=6089 HVGs): r=0.9276
+per-gene total raw counts correlation: r=0.8547
+
+Top 20 genes with biggest |log1p(CP10K)| shift across genomes:
+  gene  old_mean_log1p_CP10K  new_mean_log1p_CP10K  delta_new_minus_old  old_total  new_total  abs_delta
+ RPS18              5.211920              0.000000            -5.211920   197106.0        0.0   5.211920
+  RPS2              5.049333              0.000332            -5.049001   175168.0        1.0   5.049001
+ RPS3A              4.556853              0.000000            -4.556853   105565.0        0.0   4.556853
+  RPS9              4.130370              0.000117            -4.130253    67356.0        1.0   4.130253
+ RPL7A              4.088072              0.000000            -4.088072    66587.0        0.0   4.088072
+ RPS25              3.875497              0.000000            -3.875497    51253.0        0.0   3.875497
+MALAT1              5.017873              1.343386            -3.674487   169806.0     6976.0   3.674487
+ ACTG1              3.411391              0.000000            -3.411391    34283.0        0.0   3.411391
+EEF1B2              3.335406              0.000000            -3.335406    32260.0        0.0   3.335406
+EEF1A1              5.018035              2.137645            -2.880391   169444.0    21727.0   2.880391
+ RPS17              2.869916              0.001222            -2.868694    25358.0        5.0   2.868694
+ EEF1D              2.219459              0.023182            -2.196277     9476.0       57.0   2.196277
+  CFL1              2.189710              0.052097            -2.137613    10133.0      166.0   2.137613
+ RPL22              3.447726              1.371584            -2.076142    33457.0     9085.0   2.076142
+ RPL41              5.238331              3.185545            -2.052787   202021.0    68585.0   2.052787
+   B2M              1.972444              0.001220            -1.971224     8226.0        5.0   1.971224
+ EIF3L              1.972205              0.072240            -1.899964     7714.0      191.0   1.899964
+  LDHA              1.830884              0.000000            -1.830884     7917.0        0.0   1.830884
+  PPIA              2.514800              0.702397            -1.812403    14068.0     3078.0   1.812403
+COX6A1              1.966347              0.210326            -1.756021     7222.0      911.0   1.756021
+
+=== Tracking old fetal SC into new big atlas ===
+
+old cells matched anywhere in new big: 1949 (over 1928 unique keys)
+  → out of total old fetal SC: 7811 unique keys
+  → retention rate: 24.7%
+
+=== old cluster × new big cellstates_scANVI ===
+cellstates_scANVI   Activated CD4 T cells  Activated CD8 T cells  Activated T  Arterial EC  BEST4+ epithelial  Branch A  Branch B  Colonocyte  Cycling B cell  Cycling plasma cell  Dendritic cells  Distal progenitor  EEC  Early B cells  Enterocyte  Germinal Center B cells  Glia  Goblet cell  ICC  ILCs  IgA plasma cell  IgG plasma cell  IgM plasma cell  LEC  Lymphoid_Stroma  MAIT cell  Macrophages  Mast cells  Megakaryocyte  Memory B cells  Memory CD8 T cells  Mesoderm  Mesothelium  Monocytes  Myofibroblast  NK T cell  NK cells  Naive B cells  Naive CD4 T cells  Naive CD8 T cells  Neuroblast  Paneth  Pericyte  Progenitor  Progenitors  Proximal progenitor  SMC  Stem cells  Stromal  T helper   TA  Treg  Tuft  Venous EC  arterial capillary  cycling EC  gamma delta T cells  venous capillary  TOTAL
+old_cluster                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+FXYD3+_CKB+_SC                          0                      0            0            0                 10         0         0           0               0                    0                0                  0    0              0           0                        0     0            0    0     0                0                0                0    0                0          0            0           0              0               0                   0         0            0          0              0          0         0              0                  0                  0           0       0         0           0            0                    6    0          49        0         0    0     0     0          0                   0           0                    0                 0     65
+MTRNR2L12+ASS1+_SC                      0                      0            0            0                  1         0         0           0               0                    0                0                  0    0              0         138                        0     0            1    0     0                0                0                0    0                0          0            0           0              0               0                   0         1            0          0              0          0         0              0                  0                  0           0       0         0           0            0                  118    1         348        0         0   52     0     0          0                   0           0                    0                 0    660
+RPS10+_RPS17+_SC                        0                      0            0            0                  2         0         1           1               0                    0                0                  0    2              0          61                        0     0            6    0     1                0                0                0    0                0          0            0           0              0               1                   0        48           17          0             26          0         0              0                  0                  0           0       0         1           0            0                  305   22         559        3         0  166     0     2          0                   0           0                    0                 0   1224
+
+Original cluster sizes: {'MTRNR2L12+ASS1+_SC': 3979, 'RPS10+_RPS17+_SC': 3544, 'FXYD3+_CKB+_SC': 294}
+
+  Cluster 'MTRNR2L12+ASS1+_SC': original 3979
+    matched in new big: 658 (16.5%)
+    still 'Stem cells': 348 (8.7%)
+    reassigned to:
+cellstates_scANVI
+Stem cells             348
+Enterocyte             138
+Proximal progenitor    118
+TA                      52
+BEST4+ epithelial        1
+SMC                      1
+Mesoderm                 1
+Goblet cell              1
+
+  Cluster 'RPS10+_RPS17+_SC': original 3544
+    matched in new big: 1205 (34.0%)
+    still 'Stem cells': 559 (15.8%)
+    reassigned to:
+cellstates_scANVI
+Stem cells             559
+Proximal progenitor    305
+TA                     166
+Enterocyte              61
+Mesoderm                48
+Myofibroblast           26
+SMC                     22
+Mesothelium             17
+
+  Cluster 'FXYD3+_CKB+_SC': original 294
+    matched in new big: 65 (22.1%)
+    still 'Stem cells': 49 (16.7%)
+    reassigned to:
+cellstates_scANVI
+Stem cells             49
+BEST4+ epithelial      10
+Proximal progenitor     6
+Progenitor              0
+Mesothelium             0
+Monocytes               0
+Myofibroblast           0
+NK T cell               0
+
+=== Done ===

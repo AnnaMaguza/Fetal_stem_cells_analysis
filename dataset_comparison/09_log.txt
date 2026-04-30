@@ -1,0 +1,272 @@
+/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/louvain/__init__.py:54: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import get_distribution, DistributionNotFound
+/Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/dataset_comparison/09_lost_cells_qc.py:95: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  donor_loss = old.obs.groupby("Donor_ID").agg(n_total=("match_key", "count"), n_lost=("in_new_big", lambda x: (~x).sum()))
+/Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/dataset_comparison/09_lost_cells_qc.py:217: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  ax.boxplot(vals, labels=labs, showmeans=True)
+/Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/dataset_comparison/09_lost_cells_qc.py:217: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  ax.boxplot(vals, labels=labs, showmeans=True)
+/Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/dataset_comparison/09_lost_cells_qc.py:217: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  ax.boxplot(vals, labels=labs, showmeans=True)
+/Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/dataset_comparison/09_lost_cells_qc.py:217: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  ax.boxplot(vals, labels=labs, showmeans=True)
+
+=== Q1: lost cells QC ===
+old: (7817, 19868), columns: ['Sample_ID', 'Cell Type', 'Study_name', 'Donor_ID', 'Diagnosis', 'Age', 'Region code', 'Fraction', 'Sex', 'Library_Preparation_Protocol', 'batch', 'Age_group', 'Location', 'Cell States', 'Cell States GCA', 'Chem', 'Layer', 'Cell States Kong', 'dataset', 'n_genes_by_counts']
+
+old cells found in new big atlas: 1928 / 7817
+old cells LOST: 5889
+
+--- QC metrics: lost vs retained ---
+
+n_genes_by_counts:
+  retained (n=1928): mean=2497.3, median=2367.0, q25=1606.8, q75=3397.0
+  lost     (n=5889): mean=2183.7, median=2186.0, q25=1081.0, q75=3078.0
+  Mann-Whitney p = 4.54e-27
+
+total_counts:
+  retained (n=1928): mean=11747.7, median=9801.0, q25=4982.2, q75=17582.2
+  lost     (n=5889): mean=8983.1, median=7519.0, q25=2884.0, q75=13324.0
+  Mann-Whitney p = 6.37e-50
+
+pct_counts_mito:
+  retained (n=1928): mean=4.5, median=3.8, q25=2.8, q75=5.4
+  lost     (n=5889): mean=11.9, median=7.0, q25=3.8, q75=16.6
+  Mann-Whitney p = 5.20e-174
+
+pct_counts_ribo:
+  retained (n=1928): mean=42.7, median=42.8, q25=37.8, q75=48.0
+  lost     (n=5889): mean=31.8, median=33.4, q25=24.8, q75=40.1
+  Mann-Whitney p = 3.33e-294
+
+Loss rate per old cluster:
+  MTRNR2L12+ASS1+_SC: 3321/3979 = 83.5% lost
+  RPS10+_RPS17+_SC: 2339/3544 = 66.0% lost
+  FXYD3+_CKB+_SC: 229/294 = 77.9% lost
+
+Loss rate per donor (top 15 by old size):
+          n_total  n_lost    pct_lost
+Donor_ID                             
+F72          2111    2099   99.431549
+F73          1183    1178   99.577346
+BRC2258       914     914  100.000000
+BRC2043       732      80   10.928962
+BRC2121       491     270   54.989817
+F66           480      35    7.291667
+F78           467     466   99.785867
+BRC2133       290     179   61.724138
+BRC2134       270     270  100.000000
+BRC2119       238     109   45.798319
+BRC2046       226      88   38.938053
+BRC2259       144     144  100.000000
+BRC2049       117      35   29.914530
+F67            90       2    2.222222
+BRC2026        50      15   30.000000
+
+
+=== Q2: reassigned cells — biological correctness ===
+Loading new big atlas (this takes a minute)...
+loaded: (387076, 43704)
+  scored stem: 5/6 markers in var
+  scored TA: 6/6 markers in var
+  scored enterocyte: 10/10 markers in var
+  scored proximal_prog: 6/6 markers in var
+  scored goblet: 5/5 markers in var
+  scored BEST4_epi: 4/4 markers in var
+  scored EEC: 4/5 markers in var
+  scored paneth: 3/5 markers in var
+  scored tuft: 3/4 markers in var
+  scored mesenchymal: 6/6 markers in var
+  scored mesoderm: 5/5 markers in var
+  scored endothelial: 4/4 markers in var
+  scored smc: 3/4 markers in var
+
+old fetal SCs found in new big: 1949
+
+distribution of cellstates_scANVI:
+cellstates_scANVI
+Stem cells             956
+Proximal progenitor    429
+TA                     218
+Enterocyte             199
+Mesoderm                49
+Myofibroblast           26
+SMC                     23
+Mesothelium             17
+BEST4+ epithelial       13
+Goblet cell              7
+Stromal                  3
+EEC                      2
+Tuft                     2
+Branch B                 1
+Memory B cells           1
+Pericyte                 1
+ILCs                     1
+Colonocyte               1
+
+--- For each new cellstates_scANVI label, mean marker scores ---
+                     score_stem  score_TA  score_enterocyte  score_proximal_prog  score_goblet  score_BEST4_epi  score_EEC  score_paneth  score_tuft  score_mesenchymal  score_mesoderm  score_endothelial  score_smc  n_cells
+cellstates_scANVI                                                                                                                                                                                                             
+Stem cells             0.247305 -0.141947          0.176386             0.173295      0.232861        -0.013755  -0.008268     -0.001619   -0.003644          -0.213797       -0.182434          -0.068192  -0.253673      956
+Proximal progenitor    0.036867  0.003268          0.396571             0.145983      0.063171        -0.012864  -0.006609     -0.062267   -0.005375          -0.207019       -0.192900          -0.067669  -0.219590      429
+TA                     0.028089  0.461719          0.314678             0.107797      0.035214        -0.014462  -0.005435     -0.035936   -0.004448          -0.227794       -0.188510          -0.066431  -0.260424      218
+Enterocyte             0.009152 -0.121497          0.667988             0.130167      0.134650        -0.011607  -0.005850     -0.058798   -0.006028          -0.247151       -0.185247          -0.066300  -0.283155      199
+Mesoderm              -0.015597 -0.164401         -0.170739            -0.007860     -0.203188        -0.003894  -0.013119     -0.062792   -0.005076           0.925584       -0.016571          -0.017667   0.719386       49
+Myofibroblast         -0.025909  0.011285         -0.184478             0.053941     -0.174797        -0.015219  -0.008225     -0.066529   -0.003515           0.771766        0.103832          -0.055239   0.580886       26
+SMC                   -0.035340 -0.173430         -0.163248            -0.031370     -0.200023        -0.016559  -0.006597     -0.064977    0.016243           1.456016        0.085082          -0.060376   2.082847       23
+Mesothelium           -0.027571  0.013389         -0.161855            -0.008947     -0.201465        -0.016833  -0.011410     -0.061457   -0.004521           1.115308        0.180307          -0.043542   0.630266       17
+BEST4+ epithelial     -0.011535 -0.276527          0.328272             0.237325      0.177137        -0.027396  -0.013862     -0.089083   -0.007762           0.015808       -0.212943          -0.007633  -0.207384       13
+Goblet cell            0.120682  0.029617          0.397742             0.058542      1.650777         0.004470   0.016747      0.017607   -0.009410           0.066661       -0.144391          -0.066676  -0.013660        7
+
+--- Q2 hypothesis test: do reassigned cells really express the new-label markers? ---
+
+  'Stem cells' (n=956):
+     stem score:        mean=0.247, median=0.209
+     stem           score: mean=0.247, median=0.209
+     stem > stem in 0/956 = 0.0% of cells
+
+  'Proximal progenitor' (n=429):
+     stem score:        mean=0.037, median=-0.032
+     proximal_prog  score: mean=0.146, median=0.139
+     proximal_prog > stem in 293/429 = 68.3% of cells
+
+  'TA' (n=218):
+     stem score:        mean=0.028, median=-0.030
+     TA             score: mean=0.462, median=0.464
+     TA > stem in 191/218 = 87.6% of cells
+
+  'Enterocyte' (n=199):
+     stem score:        mean=0.009, median=-0.031
+     enterocyte     score: mean=0.668, median=0.669
+     enterocyte > stem in 196/199 = 98.5% of cells
+
+  'Mesoderm' (n=49):
+     stem score:        mean=-0.016, median=-0.029
+     mesoderm       score: mean=-0.017, median=-0.168
+     mesoderm > stem in 14/49 = 28.6% of cells
+
+  'Myofibroblast' (n=26):
+     stem score:        mean=-0.026, median=-0.030
+     mesenchymal    score: mean=0.772, median=0.683
+     mesenchymal > stem in 26/26 = 100.0% of cells
+
+  'SMC' (n=23):
+     stem score:        mean=-0.035, median=-0.039
+     smc            score: mean=2.083, median=2.118
+     smc > stem in 23/23 = 100.0% of cells
+
+  'Mesothelium' (n=17):
+     stem score:        mean=-0.028, median=-0.023
+     mesoderm       score: mean=0.180, median=0.135
+     mesoderm > stem in 10/17 = 58.8% of cells
+
+  'BEST4+ epithelial' (n=13):
+     stem score:        mean=-0.012, median=-0.048
+     BEST4_epi      score: mean=-0.027, median=-0.027
+     BEST4_epi > stem in 11/13 = 84.6% of cells
+
+  'Goblet cell' (n=7):
+     stem score:        mean=0.121, median=0.000
+     goblet         score: mean=1.651, median=1.710
+     goblet > stem in 7/7 = 100.0% of cells
+
+
+=== Q3: newly-recovered Elmentaite stem cells ===
+new dataset Elmentaite fetal stem cells: 2388
+  ↳ in OLD fetal SC analysis (matched by donor+barcode): 956
+  ↳ NEW (not in old):                                     1432
+
+QC of NEW Elmentaite stem cells (not in old):
+
+  metric | old_in_new (median) | new_only (median)
+  n_genes_by_counts: 2315.50  vs  1246.50
+  total_counts: 14751.50  vs  4679.00
+  percent_mito: 5.70  vs  4.29
+  percent_ribo: 45.91  vs  41.56
+  doublet_scores: 0.16  vs  0.15
+  predicted_doublets: {'False': 795, 'None': 161} vs {'False': 1348, 'None': 84}
+  cell_passed_qc: 1.00  vs  1.00
+
+Marker scores (old_in_new vs new_only):
+  score_stem: old=0.209  new=-0.020
+  score_TA: old=-0.188  new=-0.133
+  score_proximal_prog: old=0.162  new=0.103
+  score_enterocyte: old=0.150  new=0.040
+  score_goblet: old=0.192  new=-0.079
+  score_BEST4_epi: old=-0.020  new=-0.023
+  score_EEC: old=-0.009  new=-0.011
+
+Donor distribution of new-only Elmentaite stem cells:
+donor_id
+F66        284
+BRC2043    174
+F73        158
+BRC2133    123
+BRC2119    118
+F72        110
+BRC2121    101
+BRC2046     98
+F67         68
+BRC2029     59
+F78         51
+BRC2049     47
+BRC2026     41
+
+Donor distribution of old-matched Elmentaite stem cells:
+donor_id
+F66        366
+BRC2043    337
+F67         68
+BRC2121     65
+BRC2119     40
+BRC2133     34
+BRC2026     12
+BRC2046     10
+BRC2049      9
+F72          9
+F73          5
+F78          1
+
+old fetal SC donors: ['BRC2026', 'BRC2029', 'BRC2043', 'BRC2046', 'BRC2049', 'BRC2119', 'BRC2121', 'BRC2133', 'BRC2134', 'BRC2258', 'BRC2259', 'F66', 'F67', 'F72', 'F73', 'F78']
+new_only donors:     ['BRC2026', 'BRC2029', 'BRC2043', 'BRC2046', 'BRC2049', 'BRC2119', 'BRC2121', 'BRC2133', 'F66', 'F67', 'F72', 'F73', 'F78']
+new_only donors in old fetal SC: 13 of 13
+Traceback (most recent call last):
+  File "/Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/dataset_comparison/09_lost_cells_qc.py", line 274, in <module>
+    new_only.write_h5ad(OUT / "Q3_newly_recovered_elm_stem_cells.h5ad")
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_core/anndata.py", line 1871, in write_h5ad
+    write_h5ad(
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/h5ad.py", line 106, in write_h5ad
+    write_elem(f, "obs", adata.obs, dataset_kwargs=dataset_kwargs)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/specs/registry.py", line 487, in write_elem
+    Writer(_REGISTRY).write_elem(store, k, elem, dataset_kwargs=dataset_kwargs)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/utils.py", line 252, in func_wrapper
+    return func(*args, **kwargs)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/specs/registry.py", line 354, in write_elem
+    return write_func(store, k, elem, dataset_kwargs=dataset_kwargs)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/specs/registry.py", line 71, in wrapper
+    result = func(g, k, *args, **kwargs)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/specs/methods.py", line 916, in write_dataframe
+    _writer.write_elem(
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/utils.py", line 252, in func_wrapper
+    return func(*args, **kwargs)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/specs/registry.py", line 354, in write_elem
+    return write_func(store, k, elem, dataset_kwargs=dataset_kwargs)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/specs/registry.py", line 71, in wrapper
+    result = func(g, k, *args, **kwargs)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/utils.py", line 312, in func_wrapper
+    func(f, k, elem, _writer=_writer, dataset_kwargs=dataset_kwargs)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/anndata/_io/specs/methods.py", line 534, in write_vlen_string_array
+    f.create_dataset(k, data=elem.astype(str_dtype), dtype=str_dtype, **dataset_kwargs)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/h5py/_hl/group.py", line 186, in create_dataset
+    dsid = dataset.make_new_dset(group, shape, dtype, data, name, **kwds)
+  File "/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/h5py/_hl/dataset.py", line 178, in make_new_dset
+    dset_id.write(h5s.ALL, h5s.ALL, data)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5d.pyx", line 307, in h5py.h5d.DatasetID.write
+  File "h5py/_proxy.pyx", line 155, in h5py._proxy.dset_rw
+  File "h5py/_conv.pyx", line 442, in h5py._conv.str2vlen
+  File "h5py/_conv.pyx", line 96, in h5py._conv.generic_converter
+  File "h5py/_conv.pyx", line 247, in h5py._conv.conv_str2vlen
+TypeError: Can't implicitly convert non-string objects to strings
+Error raised while writing key 'old_leiden' of <class 'h5py._hl.group.Group'> to /obs

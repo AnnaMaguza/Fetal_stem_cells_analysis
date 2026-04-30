@@ -1,0 +1,409 @@
+{
+  "Sample_ID": {
+    "n_unique": 180,
+    "dtype": "category"
+  },
+  "Cell_Type": {
+    "n_unique": 8,
+    "dtype": "category",
+    "top_values": {
+      "Epithelial": 101665,
+      "Plasma cells": 39167,
+      "T cells": 26004,
+      "Mesenchymal": 16974,
+      "Myeloid": 12354,
+      "B cells": 5381,
+      "Endothelial": 4777,
+      "Neuronal": 1432
+    }
+  },
+  "Study_name": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "Kong, 2023": 124281,
+      "Elmentaite, 2021": 81625,
+      "Smilie, 2019": 1848
+    }
+  },
+  "Donor_ID": {
+    "n_unique": 40,
+    "dtype": "category",
+    "top_values": {
+      "A33 (414C)": 32248,
+      "197396": 23446,
+      "N10": 15862,
+      "A34 (417C)": 15461,
+      "N51": 13264,
+      "A32 (411C)": 11423,
+      "N46": 9666,
+      "N15": 8939,
+      "N18": 7262,
+      "A26 (386C)": 7085,
+      "N20": 6554,
+      "A38 (432C)": 6087,
+      "N21": 5849,
+      "N11": 5529,
+      "N17": 5436,
+      "N13": 5297,
+      "180844": 5228,
+      "A39 (440C)": 4741,
+      "A30 (398B)": 4580,
+      "139073": 4374,
+      "N16": 4326,
+      "106265": 2061,
+      "N8": 2006,
+      "N52": 224,
+      "N23": 199,
+      "N9": 132,
+      "N26": 106,
+      "N24": 85,
+      "N110": 60,
+      "N661": 51,
+      "N19": 44,
+      "N14": 39,
+      "N111": 22,
+      "N50": 22,
+      "N58": 13,
+      "N106": 9,
+      "N539": 9,
+      "N44": 8,
+      "N49": 4,
+      "N12": 3
+    }
+  },
+  "Diagnosis": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "Healthy adult": 206724,
+      "Adult Ulcerative Colitis Non-inflamed": 1030
+    }
+  },
+  "Age": {
+    "n_unique": 8,
+    "dtype": "category",
+    "top_values": {
+      "NaN": 124281,
+      "20-25": 36828,
+      "65-70": 15461,
+      "25-30": 11423,
+      "70-75": 7085,
+      "60-65": 6087,
+      "45-50": 4741,
+      "nan": 1848
+    }
+  },
+  "Region code": {
+    "n_unique": 8,
+    "dtype": "category",
+    "top_values": {
+      "NaN": 124281,
+      "CAE": 20664,
+      "REC": 18417,
+      "SCL": 17772,
+      "TCL": 11942,
+      "ACL": 9052,
+      "DCL": 3778,
+      "nan": 1848
+    }
+  },
+  "Fraction": {
+    "n_unique": 5,
+    "dtype": "category",
+    "top_values": {
+      "NaN": 124281,
+      "SC-45P": 39706,
+      "SC-45N": 28402,
+      "SC": 13517,
+      "nan": 1848
+    }
+  },
+  "Sex": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "Male": 142301,
+      "Female": 65453
+    }
+  },
+  "Library_Preparation_Protocol": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "10x 3' v1": 104973,
+      "10x 3' v2": 57984,
+      "10x 5' v1": 44797
+    }
+  },
+  "batch": {
+    "n_unique": 50,
+    "dtype": "category",
+    "top_values": {
+      "2": 62654,
+      "1": 44564,
+      "0": 17063,
+      "WTDAtest7844018": 9478,
+      "WTDAtest7844016": 8594,
+      "Human_colon_16S8001903": 6506,
+      "WTDAtest7844015": 5785,
+      "WTDAtest7844017": 4387,
+      "Human_colon_16S8001873": 3510,
+      "Human_colon_16S8001865": 3233,
+      "Human_colon_16S8117831": 2581,
+      "Human_colon_16S8117830": 2360,
+      "Human_colon_16S8123917": 2271,
+      "Human_colon_16S8001869": 2232,
+      "Human_colon_16S8117829": 2144,
+      "WTDAtest7844024": 2112,
+      "nan": 1848,
+      "Human_colon_16S8159191": 1795,
+      "WTDAtest7844029": 1590,
+      "Human_colon_16S8001867": 1542,
+      "WTDAtest7770719": 1515,
+      "Human_colon_16S8001863": 1468,
+      "Human_colon_16S8123916": 1317,
+      "Human_colon_16S8002629": 1314,
+      "Human_colon_16S8159193": 1207,
+      "Human_colon_16S8002626": 1165,
+      "WTDAtest7770716": 1158,
+      "WTDAtest7770718": 1150,
+      "Human_colon_16S8001871": 1080,
+      "Human_colon_16S8002627": 986,
+      "Human_colon_16S8123908": 986,
+      "Human_colon_16S8002630": 931,
+      "Human_colon_16S8002628": 865,
+      "Human_colon_16S8002624": 807,
+      "WTDAtest7770717": 757,
+      "Human_colon_16S8123920": 615,
+      "Human_colon_16S8000511": 577,
+      "Human_colon_16S8000471": 571,
+      "Human_colon_16S8000481": 525,
+      "Human_colon_16S8000475": 441,
+      "Human_colon_16S8000477": 393,
+      "Human_colon_16S8123910": 352,
+      "Human_colon_16S8123918": 288,
+      "Human_colon_16S8123915": 250,
+      "WTDAtest7844027": 240,
+      "Human_colon_16S8000473": 239,
+      "Human_colon_16S8000479": 227,
+      "WTDAtest7844026": 62,
+      "Human_colon_16S8002566": 16,
+      "Human_colon_16S8002573": 3
+    }
+  },
+  "Age_group": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "Adult": 207754
+    }
+  },
+  "Location": {
+    "n_unique": 4,
+    "dtype": "category",
+    "top_values": {
+      "Large Intestine": 187489,
+      "Rectum": 18417,
+      "Epithelium": 1286,
+      "Lamina Propria": 562
+    }
+  },
+  "Cell States": {
+    "n_unique": 115,
+    "dtype": "category"
+  },
+  "Cell States GCA": {
+    "n_unique": 64,
+    "dtype": "category"
+  },
+  "Chem": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "NaN": 83473,
+      "v1": 66297,
+      "v2": 57984
+    }
+  },
+  "Layer": {
+    "n_unique": 4,
+    "dtype": "category",
+    "top_values": {
+      "NaN": 83473,
+      "L": 58605,
+      "N": 35109,
+      "E": 30567
+    }
+  },
+  "Cell States Kong": {
+    "n_unique": 54,
+    "dtype": "category",
+    "top_values": {
+      "NaN": 83473,
+      "Plasma cells": 26139,
+      "Enterocytes CA1 CA2 CA4-": 14868,
+      "T cells CD4 FOSB": 7832,
+      "Enterocytes TMIGD1 MEP1A": 7734,
+      "Fibroblasts ADAMDEC1": 6116,
+      "Goblet cells MUC2 TFF1-": 5152,
+      "Epithelial Cycling cells": 4143,
+      "B cells": 4016,
+      "Stem cells OLFM4 LGR5": 3489,
+      "T cells Naive CD4": 3420,
+      "Stem cells OLFM4": 3309,
+      "Mast cells": 2480,
+      "Stem cells OLFM4 PCNA": 2284,
+      "T cells CD8": 2200,
+      "Macrophages LYVE1": 2126,
+      "Macrophages CCL3 CCL4": 1979,
+      "Endothelial cells CD36": 1904,
+      "Macrophages": 1852,
+      "NK-like cells ID3 ENTPD1": 1819,
+      "Fibroblasts SMOC2 PTGIS": 1778,
+      "T cells CD8 KLRG1": 1643,
+      "T cells CD4 IL17A": 1459,
+      "Tregs": 1454,
+      "Enterocytes BEST4": 1417,
+      "Glial cells": 1211,
+      "Fibroblasts KCNN3 LY6H": 1151,
+      "Goblet cells MUC2 TFF1": 978,
+      "Fibroblasts NPY SLITRK6": 899,
+      "DC2 CD1D": 815,
+      "NK cells KLRF1 CD3G-": 767,
+      "Fibroblasts SFRP2 SLPI": 723,
+      "Macrophages Metallothionein": 696,
+      "Myofibroblasts GREM1 GREM2": 692,
+      "Myofibroblasts HHIP NPNT": 677,
+      "DC2 CD1D-": 651,
+      "Endothelial cells DARC": 641,
+      "Goblet cells SPINK4": 489,
+      "Tuft cells": 417,
+      "DC1": 379,
+      "Monocytes S100A8 S100A9": 332,
+      "ILCs": 319,
+      "Activated fibroblasts CCL19 ADAMADEC1": 307,
+      "Lymphatics": 305,
+      "Enteroendocrine cells": 271,
+      "Pericytes HIGD1B STEAP4": 231,
+      "B cells AICDA LRMP": 177,
+      "Pericytes RERGL NTRK2": 173,
+      "Endothelial cells LTC4S SEMA3G": 113,
+      "Mature DCs": 91,
+      "Inflammatory fibroblasts IL11 CHI3L1": 87,
+      "Stromal Cycling cells": 55,
+      "Paneth cells": 13,
+      "Monocytes CHI3L1 CYP27A1": 8
+    }
+  },
+  "dataset": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "query": 124281,
+      "reference": 83473
+    }
+  },
+  "n_genes_by_counts": {
+    "n_unique": 4971,
+    "dtype": "int32"
+  },
+  "total_counts": {
+    "n_unique": 20497,
+    "dtype": "float32"
+  },
+  "total_counts_mito": {
+    "n_unique": 7466,
+    "dtype": "float32"
+  },
+  "pct_counts_mito": {
+    "n_unique": 165370,
+    "dtype": "float32"
+  },
+  "total_counts_ribo": {
+    "n_unique": 7842,
+    "dtype": "float32"
+  },
+  "pct_counts_ribo": {
+    "n_unique": 177110,
+    "dtype": "float32"
+  },
+  "Cell_ID": {
+    "n_unique": 207754,
+    "dtype": "object"
+  },
+  "_scvi_batch": {
+    "n_unique": 1,
+    "dtype": "int8",
+    "top_values": {
+      "0": 207754
+    }
+  },
+  "_scvi_labels": {
+    "n_unique": 9,
+    "dtype": "int8",
+    "top_values": {
+      "2": 90735,
+      "6": 39167,
+      "9": 26004,
+      "3": 16974,
+      "4": 12354,
+      "8": 10930,
+      "0": 5381,
+      "1": 4777,
+      "5": 1432
+    }
+  },
+  "C_scANVI": {
+    "n_unique": 9,
+    "dtype": "category",
+    "top_values": {
+      "Epithelial": 91422,
+      "Plasma cells": 39026,
+      "T cells": 26005,
+      "Mesenchymal": 17019,
+      "Myeloid": 12320,
+      "Stem Cell": 10297,
+      "B cells": 5459,
+      "Endothelial": 4810,
+      "Neuronal": 1396
+    }
+  },
+  "seed_labels": {
+    "n_unique": 31,
+    "dtype": "category",
+    "top_values": {
+      "Plasma cells": 39167,
+      "TA": 34601,
+      "Enterocyte": 24019,
+      "Stem cells": 16848,
+      "Fibroblasts": 14422,
+      "CD4 T": 13279,
+      "Colonocyte": 11650,
+      "Goblet cells": 9944,
+      "Macrophages": 7173,
+      "CD8 T": 5485,
+      "B cells": 5381,
+      "BEST4+ epithelial": 3166,
+      "Endothelial cells": 2658,
+      "NK": 2648,
+      "Mast cells": 2593,
+      "gdT": 2215,
+      "DC": 2130,
+      "Tregs": 1591,
+      "Myofibroblasts": 1532,
+      "Glial cells": 1432,
+      "Pericytes": 1020,
+      "Tuft cells": 892,
+      "Mature venous EC": 806,
+      "LEC": 679,
+      "Mature arterial EC": 674,
+      "ILCs": 481,
+      "Monocytes": 458,
+      "EECs": 353,
+      "arterial capillary": 265,
+      "Microfold cell": 146,
+      "Paneth cells": 46
+    }
+  }
+}

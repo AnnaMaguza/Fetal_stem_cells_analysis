@@ -1,0 +1,989 @@
+{
+  "cell_index": {
+    "n_unique": 3400,
+    "dtype": "category"
+  },
+  "Source Name": {
+    "n_unique": 53,
+    "dtype": "category",
+    "top_values": {
+      "HT-274-duodenum": 1826,
+      "HT-228-duodenum": 734,
+      "HT-260-proximal-small-intestine": 533,
+      "HT-236-duodenum": 418,
+      "BRC2043_DU_pos_cells": 395,
+      "HT-158-duodenum-Unsorted": 380,
+      "HT-158-duodenum-Sorted": 356,
+      "Human_colon_16S7985389": 245,
+      "HT-243-small-intestine": 232,
+      "HT-234-duodenum": 223,
+      "Human_colon_16S7985391": 219,
+      "HT-172-duodenum-2": 128,
+      "BRC2043_IL_pos_cells": 105,
+      "BRC2133_CO_pos_cells": 100,
+      "Human_colon_16S7985390": 99,
+      "HT-172-duodenum-1": 90,
+      "Human_colon_16S7985392": 87,
+      "BRC2121_CO_pos_cells": 83,
+      "BRC2119_DU_pos_cells": 81,
+      "Human_colon_16S7985394": 73,
+      "BRC2119_CO_pos_cells": 64,
+      "BRC2046_CO_pos_cells": 63,
+      "Human_colon_16S8159183": 60,
+      "BRC2121_DU_pos_cells": 55,
+      "BRC2133_DU_pos_cells": 54,
+      "Human_colon_16S8159188": 54,
+      "BRC2029_CO_total_cells": 51,
+      "Human_colon_16S8159187": 50,
+      "BRC2046_DU_pos_cells": 39,
+      "BRC2049_DU_pos_cells": 37,
+      "Human_colon_16S7985393": 36,
+      "Human_colon_16S8159189": 32,
+      "BRC2026_DU_total_cells": 30,
+      "BRC2121_IL_pos_cells": 28,
+      "Human_colon_16S7985395": 27,
+      "Human_colon_16S8159190": 27,
+      "FCA_gut8015058": 26,
+      "Human_colon_16S8159185": 26,
+      "Human_colon_16S8159182": 18,
+      "Human_colon_16S8159184": 15,
+      "FCA_gut8015059": 14,
+      "BRC2119_IL_pos_cells": 13,
+      "BRC2026_CO_total_cells": 13,
+      "BRC2049_IL_pos_cells": 11,
+      "BRC2043_CO_pos_cells": 11,
+      "BRC2026_IL_total_cells": 10,
+      "FCA_gut8015057": 8,
+      "BRC2049_CO_pos_cells": 8,
+      "BRC2046_IL_pos_cells": 6,
+      "BRC2029_DU_total_cells": 6,
+      "FCA_gut8015060": 4,
+      "BRC2133_IL_pos_cells": 3,
+      "BRC2029_IL_total_cells": 2
+    }
+  },
+  "ENA_SAMPLE": {
+    "n_unique": 53,
+    "dtype": "category",
+    "top_values": {
+      "ERS5133873": 1826,
+      "ERS5133868": 734,
+      "ERS5133872": 533,
+      "ERS5133870": 418,
+      "ERS4414940": 395,
+      "ERS5133865": 380,
+      "ERS5133864": 356,
+      "ERS5054895": 245,
+      "ERS5133871": 232,
+      "ERS5133869": 223,
+      "ERS5054890": 219,
+      "ERS5133867": 128,
+      "ERS4414947": 105,
+      "ERS4414938": 100,
+      "ERS5054885": 99,
+      "ERS5133866": 90,
+      "ERS5054878": 87,
+      "ERS4414937": 83,
+      "ERS4414943": 81,
+      "ERS5054886": 73,
+      "ERS4414936": 64,
+      "ERS4414934": 63,
+      "ERS5054887": 60,
+      "ERS4414944": 55,
+      "ERS5054888": 54,
+      "ERS4414945": 54,
+      "ERS4414962": 51,
+      "ERS5054893": 50,
+      "ERS4414941": 39,
+      "ERS4414942": 37,
+      "ERS5054891": 36,
+      "ERS5054897": 32,
+      "ERS4414963": 30,
+      "ERS4414951": 28,
+      "ERS5054879": 27,
+      "ERS5054881": 27,
+      "ERS5054880": 26,
+      "ERS5054884": 26,
+      "ERS5054892": 18,
+      "ERS5054896": 15,
+      "ERS5054894": 14,
+      "ERS4414961": 13,
+      "ERS4414950": 13,
+      "ERS4414933": 11,
+      "ERS4414949": 11,
+      "ERS4414965": 10,
+      "ERS4414935": 8,
+      "ERS5054889": 8,
+      "ERS4414964": 6,
+      "ERS4414948": 6,
+      "ERS5054877": 4,
+      "ERS4414952": 3,
+      "ERS4414966": 2
+    }
+  },
+  "BioSD_SAMPLE": {
+    "n_unique": 53,
+    "dtype": "category",
+    "top_values": {
+      "SAMEA7375431": 1826,
+      "SAMEA7375426": 734,
+      "SAMEA7375430": 533,
+      "SAMEA7375428": 418,
+      "SAMEA6655471": 395,
+      "SAMEA7375423": 380,
+      "SAMEA7375422": 356,
+      "SAMEA7296329": 245,
+      "SAMEA7375429": 232,
+      "SAMEA7375427": 223,
+      "SAMEA7296324": 219,
+      "SAMEA7375425": 128,
+      "SAMEA6655478": 105,
+      "SAMEA6655469": 100,
+      "SAMEA7296319": 99,
+      "SAMEA7375424": 90,
+      "SAMEA7296312": 87,
+      "SAMEA6655468": 83,
+      "SAMEA6655474": 81,
+      "SAMEA7296320": 73,
+      "SAMEA6655467": 64,
+      "SAMEA6655465": 63,
+      "SAMEA7296321": 60,
+      "SAMEA6655475": 55,
+      "SAMEA7296322": 54,
+      "SAMEA6655476": 54,
+      "SAMEA6655493": 51,
+      "SAMEA7296327": 50,
+      "SAMEA6655472": 39,
+      "SAMEA6655473": 37,
+      "SAMEA7296325": 36,
+      "SAMEA7296331": 32,
+      "SAMEA6655494": 30,
+      "SAMEA6655482": 28,
+      "SAMEA7296313": 27,
+      "SAMEA7296315": 27,
+      "SAMEA7296314": 26,
+      "SAMEA7296318": 26,
+      "SAMEA7296326": 18,
+      "SAMEA7296330": 15,
+      "SAMEA7296328": 14,
+      "SAMEA6655492": 13,
+      "SAMEA6655481": 13,
+      "SAMEA6655464": 11,
+      "SAMEA6655480": 11,
+      "SAMEA6655496": 10,
+      "SAMEA6655466": 8,
+      "SAMEA7296323": 8,
+      "SAMEA6655495": 6,
+      "SAMEA6655479": 6,
+      "SAMEA7296311": 4,
+      "SAMEA6655483": 3,
+      "SAMEA6655497": 2
+    }
+  },
+  "organism": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "Homo sapiens": 7308
+    }
+  },
+  "disease": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "normal": 7308
+    }
+  },
+  "organism_part": {
+    "n_unique": 5,
+    "dtype": "category",
+    "top_values": {
+      "duodenum": 4852,
+      "ileum": 1127,
+      "small intestine": 765,
+      "colon": 393,
+      "large intestine": 171
+    }
+  },
+  "cell_type": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "unsorted": 6152,
+      "intestinal epithelial cell": 1156
+    }
+  },
+  "growth_condition": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "primary tissue": 7308
+    }
+  },
+  "developmental_stage": {
+    "n_unique": 5,
+    "dtype": "category",
+    "top_values": {
+      "late embryonic stage": 4920,
+      "embryo": 1120,
+      "10th week post-fertilization human stage": 511,
+      "embryonic human stage": 434,
+      "9th week post-fertilization human stage": 323
+    }
+  },
+  "Material Type": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "organism part": 6040,
+      "cell": 1268
+    }
+  },
+  "Protocol REF": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "P-MTAB-101781": 4920,
+      "P-MTAB-95162": 1268,
+      "P-MTAB-100897": 1120
+    }
+  },
+  "sample_id": {
+    "n_unique": 53,
+    "dtype": "category",
+    "top_values": {
+      "HT-274-duodenum": 1826,
+      "HT-228-duodenum": 734,
+      "HT-260-proximal-small-intestine": 533,
+      "HT-236-duodenum": 418,
+      "BRC2043_DU_pos_cells": 395,
+      "HT-158-duodenum-Unsorted": 380,
+      "HT-158-duodenum-Sorted": 356,
+      "Human_colon_16S7985389": 245,
+      "HT-243-small-intestine": 232,
+      "HT-234-duodenum": 223,
+      "Human_colon_16S7985391": 219,
+      "HT-172-duodenum-2": 128,
+      "BRC2043_IL_pos_cells": 105,
+      "BRC2133_CO_pos_cells": 100,
+      "Human_colon_16S7985390": 99,
+      "HT-172-duodenum-1": 90,
+      "Human_colon_16S7985392": 87,
+      "BRC2121_CO_pos_cells": 83,
+      "BRC2119_DU_pos_cells": 81,
+      "Human_colon_16S7985394": 73,
+      "BRC2119_CO_pos_cells": 64,
+      "BRC2046_CO_pos_cells": 63,
+      "Human_colon_16S8159183": 60,
+      "BRC2121_DU_pos_cells": 55,
+      "BRC2133_DU_pos_cells": 54,
+      "Human_colon_16S8159188": 54,
+      "BRC2029_CO_total_cells": 51,
+      "Human_colon_16S8159187": 50,
+      "BRC2046_DU_pos_cells": 39,
+      "BRC2049_DU_pos_cells": 37,
+      "Human_colon_16S7985393": 36,
+      "Human_colon_16S8159189": 32,
+      "BRC2026_DU_total_cells": 30,
+      "BRC2121_IL_pos_cells": 28,
+      "Human_colon_16S7985395": 27,
+      "Human_colon_16S8159190": 27,
+      "FCA_gut8015058": 26,
+      "Human_colon_16S8159185": 26,
+      "Human_colon_16S8159182": 18,
+      "Human_colon_16S8159184": 15,
+      "FCA_gut8015059": 14,
+      "BRC2119_IL_pos_cells": 13,
+      "BRC2026_CO_total_cells": 13,
+      "BRC2049_IL_pos_cells": 11,
+      "BRC2043_CO_pos_cells": 11,
+      "BRC2026_IL_total_cells": 10,
+      "FCA_gut8015057": 8,
+      "BRC2049_CO_pos_cells": 8,
+      "BRC2046_IL_pos_cells": 6,
+      "BRC2029_DU_total_cells": 6,
+      "FCA_gut8015060": 4,
+      "BRC2133_IL_pos_cells": 3,
+      "BRC2029_IL_total_cells": 2
+    }
+  },
+  "LIBRARY_LAYOUT": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "SINGLE": 4920,
+      "PAIRED": 2388
+    }
+  },
+  "cdna_read_size": {
+    "n_unique": 2,
+    "dtype": "int64",
+    "top_values": {
+      "98": 4949,
+      "91": 2359
+    }
+  },
+  "cell_barcode_size": {
+    "n_unique": 1,
+    "dtype": "int64",
+    "top_values": {
+      "16": 7308
+    }
+  },
+  "end_bias": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "3 prime tag": 6188,
+      "5 prime tag": 1120
+    }
+  },
+  "library_construction": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "10xV2": 4949,
+      "10xV3": 2359
+    }
+  },
+  "sample_barcode_size": {
+    "n_unique": 1,
+    "dtype": "int64",
+    "top_values": {
+      "8": 7308
+    }
+  },
+  "umi_barcode_offset": {
+    "n_unique": 1,
+    "dtype": "int64",
+    "top_values": {
+      "16": 7308
+    }
+  },
+  "umi_barcode_size": {
+    "n_unique": 2,
+    "dtype": "int64",
+    "top_values": {
+      "10": 4949,
+      "12": 2359
+    }
+  },
+  "Performer": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "University of Michigan DNA Sequencing core": 4920,
+      "Wellcome Sanger Institute": 1268,
+      "Rasa Elmentaite, Kylie James": 1120
+    }
+  },
+  "Assay Name": {
+    "n_unique": 95,
+    "dtype": "category"
+  },
+  "ENA_EXPERIMENT": {
+    "n_unique": 53,
+    "dtype": "category",
+    "top_values": {
+      "ERX4577546": 1826,
+      "ERX4577541": 734,
+      "ERX4577545": 533,
+      "ERX4577543": 418,
+      "ERX4012074": 395,
+      "ERX4577538": 380,
+      "ERX4577537": 356,
+      "ERX4509954": 245,
+      "ERX4577544": 232,
+      "ERX4577542": 223,
+      "ERX4509949": 219,
+      "ERX4577540": 128,
+      "ERX4012081": 105,
+      "ERX4012072": 100,
+      "ERX4509944": 99,
+      "ERX4577539": 90,
+      "ERX4509937": 87,
+      "ERX4012071": 83,
+      "ERX4012077": 81,
+      "ERX4509945": 73,
+      "ERX4012070": 64,
+      "ERX4012068": 63,
+      "ERX4509946": 60,
+      "ERX4012078": 55,
+      "ERX4509947": 54,
+      "ERX4012079": 54,
+      "ERX4012096": 51,
+      "ERX4509952": 50,
+      "ERX4012075": 39,
+      "ERX4012076": 37,
+      "ERX4509950": 36,
+      "ERX4509956": 32,
+      "ERX4012097": 30,
+      "ERX4012085": 28,
+      "ERX4509938": 27,
+      "ERX4509940": 27,
+      "ERX4509939": 26,
+      "ERX4509943": 26,
+      "ERX4509951": 18,
+      "ERX4509955": 15,
+      "ERX4509953": 14,
+      "ERX4012095": 13,
+      "ERX4012084": 13,
+      "ERX4012067": 11,
+      "ERX4012083": 11,
+      "ERX4012099": 10,
+      "ERX4012069": 8,
+      "ERX4509948": 8,
+      "ERX4012098": 6,
+      "ERX4012082": 6,
+      "ERX4509936": 4,
+      "ERX4012086": 3,
+      "ERX4012100": 2
+    }
+  },
+  "ENA_RUN": {
+    "n_unique": 95,
+    "dtype": "category"
+  },
+  "time": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "N/A": 7308
+    }
+  },
+  "time_unit": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "day": 4920,
+      "week": 2388
+    }
+  },
+  "n_genes": {
+    "n_unique": 3432,
+    "dtype": "int32"
+  },
+  "doublet_scores": {
+    "n_unique": 1598,
+    "dtype": "float64"
+  },
+  "predicted_doublets": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "False": 7063,
+      "None": 245
+    }
+  },
+  "n_counts": {
+    "n_unique": 6020,
+    "dtype": "int64"
+  },
+  "log1p_n_counts": {
+    "n_unique": 6020,
+    "dtype": "float64"
+  },
+  "log1p_n_genes": {
+    "n_unique": 3432,
+    "dtype": "float64"
+  },
+  "percent_mito": {
+    "n_unique": 7247,
+    "dtype": "float64"
+  },
+  "n_counts_mito": {
+    "n_unique": 3634,
+    "dtype": "float64"
+  },
+  "percent_ribo": {
+    "n_unique": 7287,
+    "dtype": "float64"
+  },
+  "n_counts_ribo": {
+    "n_unique": 5794,
+    "dtype": "float64"
+  },
+  "percent_hb": {
+    "n_unique": 3005,
+    "dtype": "float64"
+  },
+  "n_counts_hb": {
+    "n_unique": 96,
+    "dtype": "float64"
+  },
+  "percent_top50": {
+    "n_unique": 7282,
+    "dtype": "float64"
+  },
+  "cell_passed_qc": {
+    "n_unique": 2,
+    "dtype": "bool",
+    "top_values": {
+      "true": 6428,
+      "false": 880
+    }
+  },
+  "qc_cluster": {
+    "n_unique": 60,
+    "dtype": "category",
+    "top_values": {
+      "36": 1403,
+      "59": 826,
+      "74": 549,
+      "8": 411,
+      "54": 406,
+      "7": 400,
+      "55": 382,
+      "35": 308,
+      "30": 306,
+      "79": 250,
+      "58": 249,
+      "42": 228,
+      "3": 197,
+      "37": 156,
+      "86": 132,
+      "9": 84,
+      "69": 80,
+      "27": 75,
+      "44": 69,
+      "46": 63,
+      "85": 57,
+      "15": 56,
+      "80": 41,
+      "62": 40,
+      "52": 40,
+      "12": 38,
+      "38": 37,
+      "21": 36,
+      "75": 35,
+      "92": 35,
+      "22": 35,
+      "32": 34,
+      "1": 31,
+      "57": 28,
+      "43": 27,
+      "66": 24,
+      "34": 16,
+      "6": 13,
+      "68": 13,
+      "77": 12,
+      "97": 10,
+      "70": 9,
+      "47": 9,
+      "67": 8,
+      "115": 8,
+      "41": 6,
+      "10": 5,
+      "16": 4,
+      "84": 4,
+      "91": 4,
+      "28": 3,
+      "2": 3,
+      "4": 3,
+      "29": 2,
+      "40": 2,
+      "11": 2,
+      "19": 1,
+      "17": 1,
+      "49": 1,
+      "24": 1
+    }
+  },
+  "cluster_passed_qc": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "True": 7145,
+      "False": 163
+    }
+  },
+  "consensus_fraction": {
+    "n_unique": 5,
+    "dtype": "category",
+    "top_values": {
+      "1.0": 6085,
+      "0.7": 526,
+      "0.9": 403,
+      "0.8": 156,
+      "0.6": 138
+    }
+  },
+  "consensus_passed_qc": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "True": 7308
+    }
+  },
+  "total_counts": {
+    "n_unique": 6020,
+    "dtype": "int64"
+  },
+  "n_genes_by_counts": {
+    "n_unique": 3432,
+    "dtype": "int64"
+  },
+  "percent_chrY": {
+    "n_unique": 2607,
+    "dtype": "float64"
+  },
+  "XIST-counts": {
+    "n_unique": 26,
+    "dtype": "int64",
+    "top_values": {
+      "0": 5927,
+      "1": 802,
+      "2": 258,
+      "3": 118,
+      "4": 57,
+      "5": 37,
+      "6": 25,
+      "7": 16,
+      "9": 12,
+      "8": 12,
+      "12": 9,
+      "13": 7,
+      "11": 4,
+      "10": 4,
+      "28": 3,
+      "14": 3,
+      "15": 3,
+      "16": 2,
+      "17": 2,
+      "27": 1,
+      "33": 1,
+      "24": 1,
+      "29": 1,
+      "43": 1,
+      "35": 1,
+      "31": 1
+    }
+  },
+  "XIST-percentage": {
+    "n_unique": 1350,
+    "dtype": "float64"
+  },
+  "sex": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "female": 4576,
+      "male": 2732
+    }
+  },
+  "S_score": {
+    "n_unique": 7308,
+    "dtype": "float64"
+  },
+  "G2M_score": {
+    "n_unique": 7308,
+    "dtype": "float64"
+  },
+  "Cell_cycle_phase": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "S": 4240,
+      "G1": 2324,
+      "G2M": 744
+    }
+  },
+  "Study_name": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "Holloway_2021": 4920,
+      "Elementaite_2021": 2388
+    }
+  },
+  "ArrayExpress_ID": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "E-MTAB-9489": 4920,
+      "E-MTAB-8901": 1268,
+      "E-MTAB-9536": 1120
+    }
+  },
+  "library_preparation_protocol": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "10xV2 3 prime tag": 3829,
+      "10xV3 3 prime tag": 2359,
+      "10xV2 5 prime tag": 1120
+    }
+  },
+  "full_age": {
+    "n_unique": 20,
+    "dtype": "category",
+    "top_values": {
+      "10.3 week": 1826,
+      "15 week": 813,
+      "17.4 week": 736,
+      "14.4 week": 734,
+      "8.4 week": 533,
+      "12.2 week": 511,
+      "18.9 week": 418,
+      "6.7 week": 232,
+      "11.4 week": 223,
+      "18.1 week": 218,
+      "11.2 week": 166,
+      "9.9 week": 158,
+      "11.9 week": 157,
+      "12 week": 136,
+      "16 week": 119,
+      "8.7 week": 108,
+      "8.1 week": 59,
+      "8.9 week": 56,
+      "10.4 week": 53,
+      "17 week": 52
+    }
+  },
+  "age_group": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "first trimester": 3707,
+      "second trimester": 3601
+    }
+  },
+  "immunophenotype": {
+    "n_unique": 4,
+    "dtype": "category",
+    "top_values": {
+      "unsorted": 5684,
+      "EPCAM positive": 1156,
+      "live cell": 356,
+      "total cells": 112
+    }
+  },
+  "metadata_cluster": {
+    "n_unique": 4,
+    "dtype": "category",
+    "top_values": {
+      "1": 4920,
+      "3": 1156,
+      "2": 1120,
+      "0": 112
+    }
+  },
+  "barcode": {
+    "n_unique": 3392,
+    "dtype": "category"
+  },
+  "category": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "Unknown": 5355,
+      "Epithelial": 1953
+    }
+  },
+  "Integrated_05": {
+    "n_unique": 14,
+    "dtype": "category",
+    "top_values": {
+      "Unknown": 5355,
+      "Stem cells": 1371,
+      "Distal progenitor": 333,
+      "Proximal progenitor": 96,
+      "CLDN10+ cells": 61,
+      "Colonocyte": 49,
+      "TA": 22,
+      "Enterocyte": 10,
+      "Goblet cell": 4,
+      "Paneth": 3,
+      "I cells (CCK+)": 1,
+      "L cells (PYY+)": 1,
+      "Tuft": 1,
+      "\u03b2 cells (INS+)": 1
+    }
+  },
+  "age": {
+    "n_unique": 13,
+    "dtype": "category",
+    "top_values": {
+      "72": 1826,
+      "  ": 1268,
+      "15": 813,
+      "122": 736,
+      "101": 734,
+      "59": 533,
+      "132": 418,
+      "47": 232,
+      "80": 223,
+      "127": 218,
+      "12": 136,
+      "16": 119,
+      "17": 52
+    }
+  },
+  "gestational_age": {
+    "n_unique": 9,
+    "dtype": "category",
+    "top_values": {
+      "N/A - not fetal": 6040,
+      "12.2": 511,
+      "11.2": 166,
+      "9.9": 158,
+      "11.9": 157,
+      "8.7": 108,
+      "8.1": 59,
+      "8.9": 56,
+      "10.4": 53
+    }
+  },
+  "donor_id": {
+    "n_unique": 21,
+    "dtype": "category",
+    "top_values": {
+      "6": 1826,
+      "8": 736,
+      "7": 734,
+      "F66": 650,
+      "5": 533,
+      "BRC2043": 511,
+      "3": 418,
+      "4": 232,
+      "2": 223,
+      "1": 218,
+      "BRC2121": 166,
+      "F73": 163,
+      "BRC2119": 158,
+      "BRC2133": 157,
+      "F67": 136,
+      "F72": 119,
+      "BRC2046": 108,
+      "BRC2029": 59,
+      "BRC2049": 56,
+      "BRC2026": 53,
+      "F78": 52
+    }
+  },
+  "passage": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "N/A": 7308
+    }
+  },
+  "batch": {
+    "n_unique": 44,
+    "dtype": "category",
+    "top_values": {
+      "unknown": 4920,
+      "4918STDY7421297": 395,
+      "Human_colon_16S7985389": 245,
+      "Human_colon_16S7985391": 219,
+      "4918STDY7421298": 105,
+      "4918STDY7717785": 100,
+      "Human_colon_16S7985390": 99,
+      "Human_colon_16S7985392": 87,
+      "4918STDY7693759": 83,
+      "4918STDY7693760": 81,
+      "Human_colon_16S7985394": 73,
+      "4918STDY7693762": 64,
+      "4918STDY7426906": 63,
+      "Human_colon_16S8159183": 60,
+      "4918STDY7693757": 55,
+      "4918STDY7717783": 54,
+      "Human_colon_16S8159188": 54,
+      "4918STDY7321515": 51,
+      "Human_colon_16S8159187": 50,
+      "4918STDY7426904": 39,
+      "4918STDY7426907": 37,
+      "Human_colon_16S7985393": 36,
+      "Human_colon_16S8159189": 32,
+      "4918STDY7317585": 30,
+      "4918STDY7693758": 28,
+      "Human_colon_16S7985395": 27,
+      "Human_colon_16S8159190": 27,
+      "Human_colon_16S8159185": 26,
+      "FCA_gut8015058": 26,
+      "Human_colon_16S8159182": 18,
+      "Human_colon_16S8159184": 15,
+      "FCA_gut8015059": 14,
+      "4918STDY7693761": 13,
+      "4918STDY7317587": 13,
+      "4918STDY7426908": 11,
+      "4918STDY7421299": 11,
+      "4918STDY7317586": 10,
+      "FCA_gut8015057": 8,
+      "4918STDY7426909": 8,
+      "4918STDY7426905": 6,
+      "4918STDY7321513": 6,
+      "FCA_gut8015060": 4,
+      "4918STDY7717784": 3,
+      "4918STDY7321514": 2
+    }
+  },
+  "sampling_site": {
+    "n_unique": 4,
+    "dtype": "category",
+    "top_values": {
+      "unknown": 6359,
+      "proximal": 331,
+      "middle": 312,
+      "terminal": 306
+    }
+  },
+  "celltype": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "Epithelial": 7308
+    }
+  },
+  "library_construnction_and_layout": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "10xV2_SINGLE": 2561,
+      "10xV2_PAIRED": 2388,
+      "10xV3_SINGLE": 2359
+    }
+  },
+  "cell_states": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "Stem cells": 7308
+    }
+  },
+  "cellstates_scANVI": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "Stem cells": 7308
+    }
+  },
+  "confidence_score": {
+    "n_unique": 7225,
+    "dtype": "float32"
+  },
+  "gut_region": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "small intestine": 6744,
+      "large intestine": 564
+    }
+  },
+  "cell_state": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "NaN": 7308
+    }
+  },
+  "leiden_cluster": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "0": 6177,
+      "1": 957,
+      "2": 174
+    }
+  }
+}

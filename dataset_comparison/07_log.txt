@@ -1,0 +1,184 @@
+/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/louvain/__init__.py:54: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import get_distribution, DistributionNotFound
+Loading old fetal SC ...
+old: (7817, 19868), X dtype=float32
+old leiden:
+leiden
+0    3979
+1    3544
+2     294
+old cluster:
+cluster
+MTRNR2L12+ASS1+_SC    3979
+RPS10+_RPS17+_SC      3544
+FXYD3+_CKB+_SC         294
+old Donor_ID head: Donor_ID
+F72        2111
+F73        1183
+BRC2258     914
+BRC2043     732
+BRC2121     491
+F66         480
+F78         467
+BRC2133     290
+BRC2134     270
+BRC2119     238
+BRC2046     226
+BRC2259     144
+BRC2049     117
+F67          90
+BRC2026      50
+BRC2029      14
+old Study_name: Study_name
+Elmentaite, 2021    7817
+
+Loading new fetal SC subset ...
+new: (7308, 43704), X dtype=int64
+new Study_name: Study_name
+Holloway_2021       4920
+Elementaite_2021    2388
+new donor_id top: donor_id
+6          1826
+8           736
+7           734
+F66         650
+5           533
+BRC2043     511
+3           418
+4           232
+2           223
+1           218
+BRC2121     166
+F73         163
+BRC2119     158
+BRC2133     157
+F67         136
+F72         119
+BRC2046     108
+BRC2029      59
+BRC2049      56
+BRC2026      53
+
+old match_keys unique: 7811 (cells 7817)
+new match_keys unique: 3399 (cells 7308)
+
+=== MATCHED cells (barcode + donor) ===
+matched keys: 955
+old matched cells: 955
+new matched cells: 955
+old_sub: (955, 19868), new_sub: (955, 43704)
+
+old_sub leiden distribution among matched cells:
+leiden
+1    558
+0    348
+2     49
+
+old_sub cluster distribution among matched cells:
+cluster
+RPS10+_RPS17+_SC      558
+MTRNR2L12+ASS1+_SC    348
+FXYD3+_CKB+_SC         49
+
+=== Expression comparison: same cells, two genome references ===
+old genes: 19868 (var index = symbol)
+new genes: 43704 (var index mixed symbol/Ensembl)
+shared gene symbols: 15832
+old_X_shared dtype: float32, sample values: [0. 0. 0. 0. 0.]
+new_X_shared dtype: int64, sample values: [0 0 0 0 0]
+
+PER-CELL EXPRESSION CORRELATION across genome references (n=500 sampled cells):
+  Pearson  mean=0.8852  median=0.9000  q25=0.8945  q75=0.9045
+  Spearman mean=0.8459  median=0.8600
+  fraction Pearson > 0.95: 0.000
+  fraction Pearson > 0.99: 0.000
+  fraction Pearson > 0.80: 0.980
+
+=== Per-gene mean (matched cells) ===
+per-gene mean correlation across 15832 shared genes: r=0.9246
+
+per-cell total counts (raw, on shared genes): old mean=13824.5, new mean=20486.8
+  ratio new/old mean: 1.482
+  per-cell total-counts correlation: 0.6507
+
+Wrote /Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/dataset_comparison/matched_old_new.csv (n=955)
+
+=== Tracking unmatched OLD cells in NEW BIG ===
+new big shape: (387076, 43704)
+
+old fetal SCs total (unique keys): 7811
+old fetal SC keys present anywhere in new big: 1949 cells (over 1928 keys)
+
+cellstates_scANVI distribution for old fetal SCs in new big:
+cellstates_scANVI
+Stem cells             956
+Proximal progenitor    429
+TA                     218
+Enterocyte             199
+Mesoderm                49
+Myofibroblast           26
+SMC                     23
+Mesothelium             17
+BEST4+ epithelial       13
+Goblet cell              7
+Stromal                  3
+Tuft                     2
+EEC                      2
+Memory B cells           1
+Pericyte                 1
+Colonocyte               1
+Branch B                 1
+ILCs                     1
+Naive CD4 T cells        0
+Naive B cells            0
+NK cells                 0
+Neuroblast               0
+NK T cell                0
+gamma delta T cells      0
+Naive CD8 T cells        0
+Venous EC                0
+Paneth                   0
+Progenitor               0
+Progenitors              0
+arterial capillary       0
+
+celltype distribution for old fetal SCs in new big:
+celltype
+Epithelial      1827
+Mesenchymal      119
+B cells            1
+Neuronal           1
+T cells            1
+Endothelial        0
+Myeloid            0
+Plasma cells       0
+
+age_group distribution for old fetal SCs in new big:
+age_group
+second trimester      1127
+first trimester        822
+adult                    0
+cell culture model       0
+child stage              0
+
+Study_name distribution for old fetal SCs in new big:
+Study_name
+Elementaite_2021    1949
+Holloway_2021          0
+
+=== old leiden labels propagated to new subset ===
+old_leiden
+NaN    6352
+1       559
+0       348
+2        49
+
+Contingency old leiden × new leiden_cluster:
+leiden_cluster     0    1    2
+old_leiden                    
+NaN             5276  902  174
+0                336   12    0
+1                521   38    0
+2                 44    5    0
+
+=== Done ===

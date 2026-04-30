@@ -1,0 +1,797 @@
+{
+  "cell_index": {
+    "n_unique": 190016,
+    "dtype": "category"
+  },
+  "Source Name": {
+    "n_unique": 126,
+    "dtype": "category"
+  },
+  "ENA_SAMPLE": {
+    "n_unique": 126,
+    "dtype": "category"
+  },
+  "BioSD_SAMPLE": {
+    "n_unique": 126,
+    "dtype": "category"
+  },
+  "organism": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "Homo sapiens": 387076
+    }
+  },
+  "disease": {
+    "n_unique": 1,
+    "dtype": "category",
+    "top_values": {
+      "normal": 387076
+    }
+  },
+  "organism_part": {
+    "n_unique": 14,
+    "dtype": "category",
+    "top_values": {
+      "duodenum": 217212,
+      "ileum": 63244,
+      "small intestine": 39925,
+      "colon": 20409,
+      "terminal ileum": 16712,
+      "sigmoid colon": 7020,
+      "large intestine": 6813,
+      "caecum": 5202,
+      "transverse colon": 3969,
+      "ascending colon": 2382,
+      "appendix": 2277,
+      "descending colon": 882,
+      "jejunum": 627,
+      "rectum": 402
+    }
+  },
+  "cell_type": {
+    "n_unique": 4,
+    "dtype": "category",
+    "top_values": {
+      "unsorted": 312208,
+      "intestinal epithelial cell": 52437,
+      "CD45 positive": 13146,
+      "CD45 negative": 9285
+    }
+  },
+  "growth_condition": {
+    "n_unique": 6,
+    "dtype": "category",
+    "top_values": {
+      "primary tissue": 366543,
+      "organoid grown in conditioned medium": 7316,
+      "organoid grown in unconditioned medium (no WNT3A) 2 passages": 4391,
+      "fetal enteroid grown medium NRG1, 100 nanogram per milliliter": 4386,
+      "fetal enteroid grown medium EGF, 100 nanogram per milliliter": 3220,
+      "fetal enteroid grown medium EGF, 100 nanogram per milliliter; NRG1, 100 nanogram per milliliter": 1220
+    }
+  },
+  "developmental_stage": {
+    "n_unique": 7,
+    "dtype": "category",
+    "top_values": {
+      "late embryonic stage": 230377,
+      "embryonic human stage": 44504,
+      "adult": 32301,
+      "embryo": 31159,
+      "9th week post-fertilization human stage": 24485,
+      "child stage": 16712,
+      "10th week post-fertilization human stage": 7538
+    }
+  },
+  "Material Type": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "organism part": 285011,
+      "cell": 102065
+    }
+  },
+  "Protocol REF": {
+    "n_unique": 6,
+    "dtype": "category",
+    "top_values": {
+      "P-MTAB-101781": 221551,
+      "P-MTAB-95162": 76527,
+      "P-MTAB-100978": 32301,
+      "P-MTAB-100897": 31159,
+      "Unknown": 16712,
+      "P-MTAB-102913": 8826
+    }
+  },
+  "sample_id": {
+    "n_unique": 126,
+    "dtype": "category"
+  },
+  "LIBRARY_LAYOUT": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "SINGLE": 221551,
+      "PAIRED": 165525
+    }
+  },
+  "cdna_read_size": {
+    "n_unique": 2,
+    "dtype": "int64",
+    "top_values": {
+      "98": 328289,
+      "91": 58787
+    }
+  },
+  "cell_barcode_size": {
+    "n_unique": 1,
+    "dtype": "int64",
+    "top_values": {
+      "16": 387076
+    }
+  },
+  "end_bias": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "3 prime tag": 323616,
+      "5 prime tag": 63460
+    }
+  },
+  "library_construction": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "10xV2": 328289,
+      "10xV3": 58787
+    }
+  },
+  "sample_barcode_size": {
+    "n_unique": 1,
+    "dtype": "int64",
+    "top_values": {
+      "8": 387076
+    }
+  },
+  "umi_barcode_offset": {
+    "n_unique": 1,
+    "dtype": "int64",
+    "top_values": {
+      "16": 387076
+    }
+  },
+  "umi_barcode_size": {
+    "n_unique": 2,
+    "dtype": "int64",
+    "top_values": {
+      "10": 328289,
+      "12": 58787
+    }
+  },
+  "Performer": {
+    "n_unique": 5,
+    "dtype": "category",
+    "top_values": {
+      "University of Michigan DNA Sequencing core": 221551,
+      "Wellcome Sanger Institute": 93239,
+      "Wellcome Sanger Institute Cellular Generation and Phenotyping teaml, Kylie James, Rasa Elmentaite": 32301,
+      "Rasa Elmentaite, Kylie James": 31159,
+      "University of Michigan Advanced Genomics Core": 8826
+    }
+  },
+  "Assay Name": {
+    "n_unique": 183,
+    "dtype": "category"
+  },
+  "ENA_EXPERIMENT": {
+    "n_unique": 126,
+    "dtype": "category"
+  },
+  "ENA_RUN": {
+    "n_unique": 183,
+    "dtype": "category"
+  },
+  "time": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "N/A": 378250,
+      "105.0": 6158,
+      "142.0": 2668
+    }
+  },
+  "time_unit": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "day": 230377,
+      "week": 107686,
+      "year": 49013
+    }
+  },
+  "n_genes": {
+    "n_unique": 7301,
+    "dtype": "int32"
+  },
+  "doublet_scores": {
+    "n_unique": 5324,
+    "dtype": "float64"
+  },
+  "predicted_doublets": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "False": 373145,
+      "None": 13931
+    }
+  },
+  "n_counts": {
+    "n_unique": 32611,
+    "dtype": "int64"
+  },
+  "log1p_n_counts": {
+    "n_unique": 32611,
+    "dtype": "float64"
+  },
+  "log1p_n_genes": {
+    "n_unique": 7301,
+    "dtype": "float64"
+  },
+  "percent_mito": {
+    "n_unique": 244322,
+    "dtype": "float64"
+  },
+  "n_counts_mito": {
+    "n_unique": 13488,
+    "dtype": "float64"
+  },
+  "percent_ribo": {
+    "n_unique": 306459,
+    "dtype": "float64"
+  },
+  "n_counts_ribo": {
+    "n_unique": 30151,
+    "dtype": "float64"
+  },
+  "percent_hb": {
+    "n_unique": 43526,
+    "dtype": "float64"
+  },
+  "n_counts_hb": {
+    "n_unique": 233,
+    "dtype": "float64"
+  },
+  "percent_top50": {
+    "n_unique": 291912,
+    "dtype": "float64"
+  },
+  "cell_passed_qc": {
+    "n_unique": 2,
+    "dtype": "bool",
+    "top_values": {
+      "true": 312220,
+      "false": 74856
+    }
+  },
+  "qc_cluster": {
+    "n_unique": 94,
+    "dtype": "category"
+  },
+  "cluster_passed_qc": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "True": 330541,
+      "<NA>": 32301,
+      "False": 24234
+    }
+  },
+  "consensus_fraction": {
+    "n_unique": 6,
+    "dtype": "category",
+    "top_values": {
+      "1.0": 248113,
+      "0.9": 41878,
+      "nan": 32301,
+      "0.8": 24081,
+      "0.6": 20638,
+      "0.7": 20065
+    }
+  },
+  "consensus_passed_qc": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "True": 354775,
+      "<NA>": 32301
+    }
+  },
+  "total_counts": {
+    "n_unique": 32611,
+    "dtype": "int64"
+  },
+  "n_genes_by_counts": {
+    "n_unique": 7301,
+    "dtype": "int64"
+  },
+  "percent_chrY": {
+    "n_unique": 44943,
+    "dtype": "float64"
+  },
+  "XIST-counts": {
+    "n_unique": 43,
+    "dtype": "int64",
+    "top_values": {
+      "0": 339276,
+      "1": 30767,
+      "2": 8858,
+      "3": 3631,
+      "4": 1760,
+      "5": 959,
+      "6": 507,
+      "7": 307,
+      "8": 238,
+      "9": 162,
+      "10": 115,
+      "11": 84,
+      "12": 74,
+      "13": 59,
+      "14": 46,
+      "17": 30,
+      "18": 29,
+      "16": 29,
+      "15": 28,
+      "21": 14,
+      "19": 13,
+      "20": 9,
+      "28": 9,
+      "29": 9,
+      "25": 8,
+      "23": 8,
+      "24": 8,
+      "22": 7,
+      "30": 6,
+      "26": 4,
+      "33": 3,
+      "32": 3,
+      "36": 3,
+      "31": 2,
+      "27": 2,
+      "38": 2,
+      "54": 1,
+      "56": 1,
+      "43": 1,
+      "57": 1,
+      "40": 1,
+      "37": 1,
+      "35": 1
+    }
+  },
+  "XIST-percentage": {
+    "n_unique": 24417,
+    "dtype": "float64"
+  },
+  "sex": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "female": 219110,
+      "male": 167966
+    }
+  },
+  "S_score": {
+    "n_unique": 356454,
+    "dtype": "float64"
+  },
+  "G2M_score": {
+    "n_unique": 342296,
+    "dtype": "float64"
+  },
+  "Cell_cycle_phase": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "G1": 173095,
+      "S": 124481,
+      "G2M": 89500
+    }
+  },
+  "Study_name": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "Holloway_2021": 230377,
+      "Elementaite_2021": 156699
+    }
+  },
+  "ArrayExpress_ID": {
+    "n_unique": 5,
+    "dtype": "category",
+    "top_values": {
+      "E-MTAB-9489": 221551,
+      "E-MTAB-8901": 93239,
+      "E-MTAB-9543": 32301,
+      "E-MTAB-9536": 31159,
+      "E-MTAB-9720": 8826
+    }
+  },
+  "library_preparation_protocol": {
+    "n_unique": 3,
+    "dtype": "category",
+    "top_values": {
+      "10xV2 3 prime tag": 264829,
+      "10xV2 5 prime tag": 63460,
+      "10xV3 3 prime tag": 58787
+    }
+  },
+  "full_age": {
+    "n_unique": 34,
+    "dtype": "category",
+    "top_values": {
+      "14.4 week": 49975,
+      "17.4 week": 47907,
+      "10.3 week": 26965,
+      "8.4 week": 25867,
+      "18.9 week": 22463,
+      "18.1 week": 21202,
+      "15 week": 19570,
+      "6.7 week": 16929,
+      "25 to 30 year": 15165,
+      "11.9 week": 14284,
+      "11.4 week": 13114,
+      "12 week": 10864,
+      "11.2 week": 10201,
+      "10.4 week": 9367,
+      "12.2 week": 7538,
+      "4 year": 7115,
+      "8.7 week": 6929,
+      "8.1 week": 6421,
+      "15.0 week": 6158,
+      "8.5 week": 5746,
+      "8.9 week": 5259,
+      "60 to 65 year": 5133,
+      "65 to 70 year": 4830,
+      "9.9 week": 4821,
+      "70 to 75 year": 3915,
+      "6 year": 3386,
+      "45 to 50 year": 3258,
+      "7.4 week": 3090,
+      "10 year": 2938,
+      "20.3 week": 2668,
+      "9 year": 2401,
+      "12 year": 872,
+      "16 week": 559,
+      "17 week": 166
+    }
+  },
+  "age_group": {
+    "n_unique": 5,
+    "dtype": "category",
+    "top_values": {
+      "second trimester": 169380,
+      "first trimester": 148150,
+      "adult": 32301,
+      "cell culture model": 20533,
+      "child stage": 16712
+    }
+  },
+  "immunophenotype": {
+    "n_unique": 7,
+    "dtype": "category",
+    "top_values": {
+      "unsorted": 246775,
+      "total cells": 44207,
+      "EPCAM positive": 43611,
+      "live cell": 24631,
+      "CD45 positive": 13146,
+      "CD45 negative": 9285,
+      "EPCAM negative": 5421
+    }
+  },
+  "metadata_cluster": {
+    "n_unique": 4,
+    "dtype": "category",
+    "top_values": {
+      "1": 221551,
+      "2": 63460,
+      "0": 58427,
+      "3": 43638
+    }
+  },
+  "barcode": {
+    "n_unique": 170484,
+    "dtype": "category"
+  },
+  "category": {
+    "n_unique": 9,
+    "dtype": "category",
+    "top_values": {
+      "Unknown": 274431,
+      "Mesenchymal": 48016,
+      "Epithelial": 33579,
+      "T cells": 7920,
+      "B cells": 6776,
+      "Neuronal": 5840,
+      "Plasma cells": 5047,
+      "Endothelial": 3303,
+      "Myeloid": 2164
+    }
+  },
+  "Integrated_05": {
+    "n_unique": 131,
+    "dtype": "category"
+  },
+  "age": {
+    "n_unique": 23,
+    "dtype": "category",
+    "top_values": {
+      "  ": 76527,
+      "101": 49975,
+      "122": 47907,
+      "72": 26965,
+      "59": 22996,
+      "132": 22463,
+      "127": 21202,
+      "15": 19570,
+      "47": 16929,
+      "25 to 30": 15165,
+      "80": 13114,
+      "12": 11736,
+      "nan": 8826,
+      "4": 7115,
+      "60 to 65": 5133,
+      "65 to 70": 4830,
+      "70 to 75": 3915,
+      "6": 3386,
+      "45 to 50": 3258,
+      "10": 2938,
+      "9": 2401,
+      "16": 559,
+      "17": 166
+    }
+  },
+  "gestational_age": {
+    "n_unique": 12,
+    "dtype": "category",
+    "top_values": {
+      "N/A - not fetal": 310549,
+      "11.9": 14284,
+      "11.2": 10201,
+      "10.4": 9367,
+      "12.2": 7538,
+      "8.7": 6929,
+      "8.1": 6421,
+      "8.5": 5746,
+      "8.9": 5259,
+      "9.9": 4821,
+      "7.4": 3090,
+      "8.4": 2871
+    }
+  },
+  "donor_id": {
+    "n_unique": 38,
+    "dtype": "category",
+    "top_values": {
+      "7": 49975,
+      "8": 47907,
+      "6": 26965,
+      "5": 22996,
+      "3": 22463,
+      "1": 21202,
+      "F66": 19032,
+      "4": 16929,
+      "411C": 15165,
+      "BRC2133": 14284,
+      "2": 13114,
+      "F67": 10864,
+      "BRC2121": 10201,
+      "BRC2026": 9367,
+      "cell_culture": 8826,
+      "BRC2043": 7538,
+      "BRC2046": 6929,
+      "BRC2029": 6421,
+      "BRC2206": 5746,
+      "BRC2049": 5259,
+      "T036": 5147,
+      "432c": 5133,
+      "417C": 4830,
+      "BRC2119": 4821,
+      "386C": 3915,
+      "T057": 3386,
+      "440C": 3258,
+      "BRC2039": 3090,
+      "BRC2038": 2871,
+      "T182": 2401,
+      "T160": 1967,
+      "T161": 1454,
+      "T44": 971,
+      "T024": 872,
+      "F72": 559,
+      "F73": 538,
+      "T110": 514,
+      "F78": 166
+    }
+  },
+  "passage": {
+    "n_unique": 4,
+    "dtype": "category",
+    "top_values": {
+      "N/A": 375369,
+      "2": 5746,
+      "17": 3090,
+      "1": 2871
+    }
+  },
+  "batch": {
+    "n_unique": 112,
+    "dtype": "category"
+  },
+  "sampling_site": {
+    "n_unique": 4,
+    "dtype": "category",
+    "top_values": {
+      "unknown": 362730,
+      "proximal": 9380,
+      "middle": 8338,
+      "terminal": 6628
+    }
+  },
+  "celltype": {
+    "n_unique": 8,
+    "dtype": "category",
+    "top_values": {
+      "Mesenchymal": 186978,
+      "Epithelial": 110105,
+      "Neuronal": 21503,
+      "T cells": 19871,
+      "Myeloid": 17060,
+      "Endothelial": 12390,
+      "B cells": 10876,
+      "Plasma cells": 8293
+    }
+  },
+  "library_construnction_and_layout": {
+    "n_unique": 4,
+    "dtype": "category",
+    "top_values": {
+      "10xV2_SINGLE": 171590,
+      "10xV2_PAIRED": 156699,
+      "10xV3_SINGLE": 49961,
+      "10xV3_PAIRED": 8826
+    }
+  },
+  "cell_states": {
+    "n_unique": 99,
+    "dtype": "category"
+  },
+  "cellstates_scANVI": {
+    "n_unique": 58,
+    "dtype": "category",
+    "top_values": {
+      "Mesoderm": 70494,
+      "Stromal": 44200,
+      "Enterocyte": 28766,
+      "Proximal progenitor": 26304,
+      "SMC": 22427,
+      "Myofibroblast": 19010,
+      "Pericyte": 15702,
+      "TA": 14501,
+      "Stem cells": 13495,
+      "Mesothelium": 13159,
+      "Colonocyte": 11417,
+      "Macrophages": 9217,
+      "Progenitor": 7705,
+      "IgA plasma cell": 6996,
+      "Branch B": 6052,
+      "BEST4+ epithelial": 6008,
+      "Goblet cell": 5621,
+      "venous capillary": 4686,
+      "Dendritic cells": 4241,
+      "Naive B cells": 3870,
+      "EEC": 3516,
+      "Branch A": 3327,
+      "ILCs": 2931,
+      "Activated CD8 T cells": 2898,
+      "Venous EC": 2827,
+      "NK cells": 2694,
+      "Activated CD4 T cells": 2509,
+      "IgM plasma cell": 2495,
+      "Arterial EC": 2458,
+      "Memory B cells": 2433,
+      "Neuroblast": 2301,
+      "gamma delta T cells": 2242,
+      "T helper": 2149,
+      "Glia": 2118,
+      "Naive CD4 T cells": 1801,
+      "Monocytes": 1777,
+      "Germinal Center B cells": 1706,
+      "Cycling B cell": 1626,
+      "LEC": 1181,
+      "cycling EC": 1076,
+      "Early B cells": 914,
+      "Memory CD8 T cells": 863,
+      "Naive CD8 T cells": 774,
+      "Treg": 708,
+      "IgG plasma cell": 681,
+      "Progenitors": 528,
+      "Mast cells": 507,
+      "NK T cell": 504,
+      "Cycling plasma cell": 478,
+      "Activated T": 473,
+      "Distal progenitor": 249,
+      "Tuft": 215,
+      "arterial capillary": 162,
+      "MAIT cell": 35,
+      "ICC": 31,
+      "Paneth": 13,
+      "Lymphoid_Stroma": 4,
+      "Megakaryocyte": 1
+    }
+  },
+  "confidence_score": {
+    "n_unique": 203651,
+    "dtype": "float32"
+  },
+  "gut_region": {
+    "n_unique": 2,
+    "dtype": "category",
+    "top_values": {
+      "small intestine": 337720,
+      "large intestine": 49356
+    }
+  },
+  "cell_state": {
+    "n_unique": 36,
+    "dtype": "category",
+    "top_values": {
+      "NaN": 316635,
+      "Unknown": 45230,
+      "IgA plasma cell": 4686,
+      "Naive B cells": 2054,
+      "Activated CD8 T cells": 1826,
+      "Memory B cells": 1575,
+      "gamma delta T cells": 1534,
+      "Germinal Center B cells": 1427,
+      "Macrophages": 1213,
+      "Cycling B cell": 977,
+      "T helper": 953,
+      "venous capillary": 885,
+      "Arterial EC": 758,
+      "Naive CD4 T cells": 732,
+      "Venous EC": 696,
+      "Activated CD4 T cells": 625,
+      "Dendritic cells": 590,
+      "LEC": 560,
+      "ILCs": 476,
+      "Memory CD8 T cells": 439,
+      "NK cells": 377,
+      "Cycling plasma cell": 374,
+      "Early B cells": 334,
+      "Treg": 326,
+      "Naive CD8 T cells": 294,
+      "cycling EC": 276,
+      "IgG plasma cell": 240,
+      "Monocytes": 236,
+      "Activated T": 155,
+      "NK T cell": 147,
+      "arterial capillary": 128,
+      "IgM plasma cell": 121,
+      "Mast cells": 115,
+      "MAIT cell": 36,
+      "Progenitors": 35,
+      "Megakaryocyte": 11
+    }
+  },
+  "_scvi_batch": {
+    "n_unique": 1,
+    "dtype": "int8",
+    "top_values": {
+      "0": 387076
+    }
+  },
+  "_scvi_labels": {
+    "n_unique": 99,
+    "dtype": "int8"
+  }
+}

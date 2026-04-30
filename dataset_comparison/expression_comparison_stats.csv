@@ -1,0 +1,9 @@
+metric,value
+total_counts_corr,1.0
+mean_pearson_r,1.0
+median_pearson_r,1.0
+frac_r_gt_0p95,1.0
+frac_r_gt_0p99,1.0
+subset_mean_counts,14123.326902025177
+new_mean_counts,14123.326902025177
+ratio_new_over_old,1.0

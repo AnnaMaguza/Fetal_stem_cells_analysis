@@ -1,0 +1,187 @@
+/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/louvain/__init__.py:54: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import get_distribution, DistributionNotFound
+/Users/am336941/uv_envs/scprint_env230/scprint_env230/lib/python3.10/site-packages/scanpy/preprocessing/_highly_variable_genes.py:693: UserWarning: `n_top_genes` > number of normalized dispersions, returning all genes with normalized dispersions.
+  df = _highly_variable_genes_batched(
+/Users/am336941/.local/share/uv/python/cpython-3.10.17-macos-aarch64-none/lib/python3.10/functools.py:889: UserWarning: zero-centering a sparse array/matrix densifies it.
+  return dispatch(args[0].__class__)(*args, **kw)
+=== Checking Holloway 2021 across new big atlas ===
+Holloway 2021 total cells: 230377
+
+growth_condition value counts (top 30):
+growth_condition
+primary tissue                                                                                     221551
+fetal enteroid grown medium NRG1, 100 nanogram per milliliter                                        4386
+fetal enteroid grown medium EGF, 100 nanogram per milliliter                                         3220
+fetal enteroid grown medium EGF, 100 nanogram per milliliter; NRG1, 100 nanogram per milliliter      1220
+
+Material Type:
+Material Type
+organism part    221551
+cell               8826
+
+age_group:
+age_group
+second trimester      141547
+first trimester        80004
+cell culture model      8826
+
+full_age (top 15):
+full_age
+14.4 week    49975
+17.4 week    47907
+10.3 week    26965
+8.4 week     22996
+18.9 week    22463
+18.1 week    21202
+6.7 week     16929
+11.4 week    13114
+15.0 week     6158
+20.3 week     2668
+
+Loading subset ...
+subset: (7308, 43704)
+
+Holloway 2021 cells (enteroids) in subset: 4920
+Elementaite 2021 cells (primary tissue) in subset: 2388
+
+=== Reclustering: 2388 primary-tissue fetal SC (Elmentaite only) ===
+  age_group: {'second trimester': 1495, 'first trimester': 893}
+  donor_id (top 15): {'F66': 650, 'BRC2043': 511, 'BRC2121': 166, 'F73': 163, 'BRC2119': 158, 'BRC2133': 157, 'F67': 136, 'F72': 119, 'BRC2046': 108, 'BRC2029': 59, 'BRC2049': 56, 'BRC2026': 53, 'F78': 52}
+  gut_region: {'small intestine': 1824, 'large intestine': 564}
+
+=== Fresh PCA Leiden 0.3 (8 clusters): ===
+leiden_03
+1    701
+3    424
+0    367
+5    334
+2    319
+7    111
+6     70
+4     62
+
+=== Leiden 0.5 (9 clusters): ===
+leiden_05
+1    600
+3    424
+2    418
+6    334
+0    323
+8    111
+7     70
+4     62
+5     46
+
+=== Using precomputed focused scVI from subset ===
+focused scVI Leiden 0.3 (5 clusters):
+leiden_scvi_03
+1    1073
+2     653
+0     363
+3     235
+4      64
+
+focused scVI Leiden 0.5 (8 clusters):
+leiden_scvi_05
+3    499
+5    465
+0    348
+6    291
+4    284
+7    233
+2    164
+1    104
+
+=== DE genes per leiden_scvi_03 cluster (focused scVI; most relevant) ===
+
+--- Cluster 0 (n=363) top 15 markers ---
+   names    scores     pvals_adj
+   APOA1 23.413769 1.352388e-116
+MARCKSL1 21.945488 2.089800e-102
+ S100A10 21.682741 4.349396e-100
+     ID2 21.351093  4.161994e-97
+     MDK 21.133646  3.410909e-95
+    ODC1 20.717596  1.750982e-91
+  TMSB4X 20.263233  1.695272e-87
+ ZFP36L2 20.241907  2.287119e-87
+     CKB 20.218761  3.250792e-87
+    MPC2 19.304909  2.134539e-79
+    GPC3 18.548203  3.350299e-73
+    RCN2 18.469755  1.317404e-72
+   HMGN1 18.423422  2.660992e-72
+   GOLM1 18.231476  8.331113e-71
+   H3-3B 18.228788  8.331113e-71
+
+--- Cluster 1 (n=1073) top 15 markers ---
+   names    scores     pvals_adj
+   FCGRT 28.955585 1.043145e-179
+    MT1G 27.066948 5.273018e-157
+  TSPAN8 27.049496 5.640663e-157
+   CCL25 27.032581 6.688192e-157
+    MT1E 26.216305 1.514142e-147
+  SMIM24 25.133205 1.571257e-135
+  ANXA13 24.733061 2.945307e-131
+    MT2A 24.490463 1.019707e-128
+    AGR2 24.223164 6.159889e-126
+    MT1H 23.823170 8.398738e-122
+   GSTK1 23.608345 1.257033e-119
+   KRT18 23.276787 2.775035e-116
+  MT-CO2 23.134933 6.930697e-115
+LGALS3BP 23.117243 9.696168e-115
+ ATP5MC1 23.081831 2.053739e-114
+
+--- Cluster 2 (n=653) top 15 markers ---
+          names    scores     pvals_adj
+        MT-RNR2 22.094658 6.219141e-105
+         MT-ND6 19.728960  6.563466e-84
+           EME2 19.338472  1.092224e-80
+ENSG00000273149 19.132027  5.148694e-79
+          JSRP1 19.119442  6.498053e-79
+         TALAM1 19.070568  1.615077e-78
+          ABCB9 19.000921  5.812615e-78
+ENSG00000244380 18.998291  6.063178e-78
+ENSG00000287967 18.891321  4.384668e-77
+          SNX32 18.856731  8.253726e-77
+ENSG00000272173 18.799301  2.355024e-76
+        BTG1-DT 18.680780  2.054218e-75
+ENSG00000279035 18.553070  2.040168e-74
+     CATSPER2P1 18.530165  3.031652e-74
+ENSG00000272256 18.499136  5.331121e-74
+
+--- Cluster 3 (n=235) top 15 markers ---
+ names    scores    pvals_adj
+ RPL21 18.321503 1.874286e-71
+  RPL7 17.681974 1.802436e-66
+ RPL31 17.046331 1.084364e-61
+  RPS6 16.767393 1.154457e-59
+ RPL12 16.259039 4.954969e-56
+ RPL34 16.082279 7.812539e-55
+ RPL26 15.448929 1.596395e-50
+ RPS13 15.439912 1.752553e-50
+RPS15A 15.419635 2.295121e-50
+ RPS4X 14.901814 5.607202e-47
+RPL35A 14.616052 3.729986e-45
+ RPS27 14.332630 2.214950e-43
+  RPS8 14.258201 6.221586e-43
+ RPS12 13.950518 4.550052e-41
+ RPL32 13.887048 1.070042e-40
+
+--- Cluster 4 (n=64) top 15 markers ---
+  names    scores    pvals_adj
+ SPINK1 13.037560 2.446650e-34
+   DLK1 13.006778 2.446650e-34
+ TM4SF1 12.570048 4.494737e-32
+    MDK 11.954879 6.689231e-29
+   RBP1 11.821002 2.657518e-28
+  H3-3B 11.216307 2.470286e-25
+ CLDN10 11.074529 1.041126e-24
+   RBPJ 10.806592 1.750079e-23
+   MEST 10.645334 8.902309e-23
+    CLU 10.600219 1.299256e-22
+TACSTD2 10.221192 6.331822e-21
+   AMBP  9.867344 2.100399e-19
+   BTG1  9.598305 2.537024e-18
+  CYB5A  9.494750 6.431482e-18
+   BEX3  8.581781 2.041312e-14
+
+=== Done ===
