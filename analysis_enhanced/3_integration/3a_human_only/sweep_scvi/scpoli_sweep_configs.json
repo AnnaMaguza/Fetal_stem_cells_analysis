@@ -1,0 +1,21 @@
+{
+  "fixed": {
+    "object_a_path": "/Users/am336941/PhD/data/Fetal_stem_cells_analysis_enhanced/sweep_scvi/hidden256/integrated.h5ad",
+    "output_root": "/Users/am336941/PhD/data/Fetal_stem_cells_analysis_enhanced/sweep_scpoli",
+    "condition_keys": ["sample_id"],
+    "cell_type_keys": ["cell_states"],
+    "unknown_ct_names": ["unknown"],
+    "skip_hvg": true,
+    "n_epochs": 80,
+    "pretraining_epochs": 25,
+    "early_stopping_kwargs": {"patience": 10, "threshold": 0.0, "reduce_lr": true, "lr_patience": 5, "lr_factor": 0.5},
+    "random_state": 0,
+    "recon_loss": "nb"
+  },
+  "configs": [
+    {"name": "baseline",     "latent_dim": 30, "embedding_dims": 10, "hidden_layer_sizes": null},
+    {"name": "latent50",     "latent_dim": 50, "embedding_dims": 10, "hidden_layer_sizes": null},
+    {"name": "emb_large",    "latent_dim": 30, "embedding_dims": 30, "hidden_layer_sizes": null},
+    {"name": "deeper",       "latent_dim": 30, "embedding_dims": 10, "hidden_layer_sizes": [256, 128]}
+  ]
+}

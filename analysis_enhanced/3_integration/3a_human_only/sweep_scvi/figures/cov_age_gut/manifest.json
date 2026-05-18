@@ -1,0 +1,34 @@
+{
+  "name": "cov_age_gut",
+  "config": {
+    "name": "cov_age_gut",
+    "n_top_hvgs": 2000,
+    "n_latent": 30,
+    "n_hidden": 256,
+    "gene_likelihood": "nb",
+    "categorical_covariate_keys": [
+      "age_group",
+      "gut_region"
+    ],
+    "continuous_covariate_keys": []
+  },
+  "n_cells": 102460,
+  "n_genes": 2000,
+  "n_epochs_run": 100,
+  "wallclock_min": 10.566764084498088,
+  "device": "mps",
+  "scib": {
+    "Isolated labels": 0.5908332467079163,
+    "KMeans NMI": 0.27366236039612263,
+    "KMeans ARI": 0.16429390628719376,
+    "Silhouette label": 0.5015239119529724,
+    "cLISI": 0.9364320635795593,
+    "BRAS": 0.8933249115943909,
+    "iLISI": 0.017252326011657715,
+    "Graph connectivity": 0.8119020395262605,
+    "PCR comparison": 0.4580329618251688,
+    "Batch correction": 0.5451280597393694,
+    "Bio conservation": 0.4933491230010986,
+    "Total": 0.5140606976964069
+  }
+}

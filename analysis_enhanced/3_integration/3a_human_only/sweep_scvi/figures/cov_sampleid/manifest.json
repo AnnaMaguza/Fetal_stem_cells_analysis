@@ -1,0 +1,33 @@
+{
+  "name": "cov_sampleid",
+  "config": {
+    "name": "cov_sampleid",
+    "n_top_hvgs": 2000,
+    "n_latent": 30,
+    "n_hidden": 256,
+    "gene_likelihood": "nb",
+    "categorical_covariate_keys": [
+      "sample_id"
+    ],
+    "continuous_covariate_keys": []
+  },
+  "n_cells": 102460,
+  "n_genes": 2000,
+  "n_epochs_run": 100,
+  "wallclock_min": 10.609432164827982,
+  "device": "mps",
+  "scib": {
+    "Isolated labels": 0.5714970231056213,
+    "KMeans NMI": 0.26839892181374153,
+    "KMeans ARI": 0.16244960587292984,
+    "Silhouette label": 0.5044333934783936,
+    "cLISI": 0.9199457168579102,
+    "BRAS": 0.9155294299125671,
+    "iLISI": 0.101218581199646,
+    "Graph connectivity": 0.7770566472090255,
+    "PCR comparison": 0.5703769206971612,
+    "Batch correction": 0.5910453798534387,
+    "Bio conservation": 0.48534493446350097,
+    "Total": 0.5276251126194761
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "n_top_hvgs": 2000,
+  "n_latent": 30,
+  "n_hidden": 256,
+  "n_layers": 2,
+  "gene_likelihood": "nb",
+  "dropout_rate": 0.1,
+  "dispersion": "gene-batch",
+  "batch_key": "Study_name",
+  "labels_key": "cell_states",
+  "categorical_covariate_keys": [
+    "age_group",
+    "sample_id"
+  ],
+  "continuous_covariate_keys": [],
+  "max_epochs": 100,
+  "early_stopping": true,
+  "early_stopping_patience": 10,
+  "check_val_every_n_epoch": 1,
+  "batch_size": 256,
+  "min_cells_per_gene": 10,
+  "hvg_flavor": "seurat_v3",
+  "hvg_batch_key": "Study_name",
+  "random_state": 0,
+  "_picked_from_sweep_run": "cov_age_sample"
+}

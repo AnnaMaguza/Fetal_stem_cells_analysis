@@ -1,0 +1,33 @@
+{
+  "name": "cov_gutregion",
+  "config": {
+    "name": "cov_gutregion",
+    "n_top_hvgs": 2000,
+    "n_latent": 30,
+    "n_hidden": 256,
+    "gene_likelihood": "nb",
+    "categorical_covariate_keys": [
+      "gut_region"
+    ],
+    "continuous_covariate_keys": []
+  },
+  "n_cells": 102460,
+  "n_genes": 2000,
+  "n_epochs_run": 100,
+  "wallclock_min": 10.434318582216898,
+  "device": "mps",
+  "scib": {
+    "Isolated labels": 0.5995457768440247,
+    "KMeans NMI": 0.22196959237244782,
+    "KMeans ARI": 0.13104180938481091,
+    "Silhouette label": 0.4994123578071594,
+    "cLISI": 0.9431706666946411,
+    "BRAS": 0.876046895980835,
+    "iLISI": 0.0027899742126464844,
+    "Graph connectivity": 0.7840603671450022,
+    "PCR comparison": 0.4323228988660758,
+    "Batch correction": 0.5238050340511399,
+    "Bio conservation": 0.47902803421020507,
+    "Total": 0.496938834146579
+  }
+}

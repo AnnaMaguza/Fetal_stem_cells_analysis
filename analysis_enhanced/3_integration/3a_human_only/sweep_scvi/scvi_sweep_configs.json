@@ -1,0 +1,44 @@
+{
+  "fixed": {
+    "object_a_path": "/Users/am336941/PhD/data/Fetal_stem_cells_analysis_enhanced/object_a_human.h5ad",
+    "models_root": "/Users/am336941/PhD/data/Fetal_stem_cells_analysis_enhanced/sweep_scvi",
+    "figures_root": "/Users/am336941/Library/CloudStorage/OneDrive-GSK/Desktop/Fetal_stem_cells_analysis/analysis_enhanced/3_integration/3a_human_only/sweep_scvi/figures",
+    "batch_key": "Study_name",
+    "label_key": "cell_states",
+    "unlabeled_category": "unknown",
+    "n_layers": 2,
+    "dropout_rate": 0.1,
+    "dispersion": "gene-batch",
+    "max_epochs": 100,
+    "early_stopping": true,
+    "check_val_every_n_epoch": 1,
+    "batch_size": 256,
+    "hvg_flavor": "seurat_v3",
+    "hvg_batch_key": "Study_name",
+    "min_cells_per_gene": 10,
+    "random_state": 0,
+    "baseline_n_top_hvgs": 2000
+  },
+  "configs": [
+    {"name": "baseline",         "n_top_hvgs": 2000, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": [],                              "continuous_covariate_keys": []},
+
+    {"name": "cov_totalcounts",  "n_top_hvgs": 2000, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": [],                              "continuous_covariate_keys": ["total_counts"]},
+
+    {"name": "cov_age",          "n_top_hvgs": 2000, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": ["age_group"],                   "continuous_covariate_keys": []},
+    {"name": "cov_gutregion",    "n_top_hvgs": 2000, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": ["gut_region"],                  "continuous_covariate_keys": []},
+    {"name": "cov_sampleid",     "n_top_hvgs": 2000, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": ["sample_id"],                   "continuous_covariate_keys": []},
+    {"name": "cov_age_gut",      "n_top_hvgs": 2000, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": ["age_group", "gut_region"],     "continuous_covariate_keys": []},
+    {"name": "cov_age_sample",   "n_top_hvgs": 2000, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": ["age_group", "sample_id"],      "continuous_covariate_keys": []},
+
+    {"name": "hvg1000",          "n_top_hvgs": 1000, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": [],                              "continuous_covariate_keys": []},
+    {"name": "hvg1500",          "n_top_hvgs": 1500, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": [],                              "continuous_covariate_keys": []},
+    {"name": "hvg3000",          "n_top_hvgs": 3000, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": [],                              "continuous_covariate_keys": []},
+
+    {"name": "latent15",         "n_top_hvgs": 2000, "n_latent": 15, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": [],                              "continuous_covariate_keys": []},
+    {"name": "latent50",         "n_top_hvgs": 2000, "n_latent": 50, "n_hidden": 256, "gene_likelihood": "nb",   "categorical_covariate_keys": [],                              "continuous_covariate_keys": []},
+
+    {"name": "hidden128",        "n_top_hvgs": 2000, "n_latent": 30, "n_hidden": 128, "gene_likelihood": "nb",   "categorical_covariate_keys": [],                              "continuous_covariate_keys": []},
+
+    {"name": "zinb",             "n_top_hvgs": 2000, "n_latent": 30, "n_hidden": 256, "gene_likelihood": "zinb", "categorical_covariate_keys": [],                              "continuous_covariate_keys": []}
+  ]
+}

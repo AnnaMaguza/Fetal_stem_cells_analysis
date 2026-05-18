@@ -1,0 +1,31 @@
+{
+  "name": "zinb",
+  "config": {
+    "name": "zinb",
+    "n_top_hvgs": 2000,
+    "n_latent": 30,
+    "n_hidden": 256,
+    "gene_likelihood": "zinb",
+    "categorical_covariate_keys": [],
+    "continuous_covariate_keys": []
+  },
+  "n_cells": 102460,
+  "n_genes": 2000,
+  "n_epochs_run": 100,
+  "wallclock_min": 11.080490362644195,
+  "device": "mps",
+  "scib": {
+    "Isolated labels": 0.5989551544189453,
+    "KMeans NMI": 0.22949348691969843,
+    "KMeans ARI": 0.14552051928464094,
+    "Silhouette label": 0.49818655848503113,
+    "cLISI": 0.945868968963623,
+    "BRAS": 0.8735072612762451,
+    "iLISI": 0.0026123523712158203,
+    "Graph connectivity": 0.7433187009680473,
+    "PCR comparison": 0.43664937924234115,
+    "Batch correction": 0.5140219234644623,
+    "Bio conservation": 0.48360490798950195,
+    "Total": 0.49577171417948607
+  }
+}

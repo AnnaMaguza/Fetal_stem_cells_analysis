@@ -1,0 +1,31 @@
+{
+  "name": "hvg1500",
+  "config": {
+    "name": "hvg1500",
+    "n_top_hvgs": 1500,
+    "n_latent": 30,
+    "n_hidden": 256,
+    "gene_likelihood": "nb",
+    "categorical_covariate_keys": [],
+    "continuous_covariate_keys": []
+  },
+  "n_cells": 102460,
+  "n_genes": 1500,
+  "n_epochs_run": 100,
+  "wallclock_min": 9.988463552792867,
+  "device": "mps",
+  "scib": {
+    "Isolated labels": 0.5989405512809753,
+    "KMeans NMI": 0.22334925743125486,
+    "KMeans ARI": 0.13126901991180237,
+    "Silhouette label": 0.5017924308776855,
+    "cLISI": 0.9421933889389038,
+    "BRAS": 0.8556993007659912,
+    "iLISI": 0.0015653371810913086,
+    "Graph connectivity": 0.7709844813060159,
+    "PCR comparison": 0.38996166107658004,
+    "Batch correction": 0.5045526950824196,
+    "Bio conservation": 0.47950897216796873,
+    "Total": 0.4895264613337491
+  }
+}

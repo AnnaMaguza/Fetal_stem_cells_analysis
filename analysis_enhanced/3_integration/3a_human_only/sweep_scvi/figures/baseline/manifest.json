@@ -1,0 +1,31 @@
+{
+  "name": "baseline",
+  "config": {
+    "name": "baseline",
+    "n_top_hvgs": 2000,
+    "n_latent": 30,
+    "n_hidden": 256,
+    "gene_likelihood": "nb",
+    "categorical_covariate_keys": [],
+    "continuous_covariate_keys": []
+  },
+  "n_cells": 117208,
+  "n_genes": 3000,
+  "n_epochs_run": null,
+  "wallclock_min": 0.0002019842465718587,
+  "device": "mps",
+  "scib": {
+    "Isolated labels": 0.5810208320617676,
+    "KMeans NMI": 0.2787364826000099,
+    "KMeans ARI": 0.09814602486371493,
+    "Silhouette label": 0.5046975612640381,
+    "cLISI": 0.972072422504425,
+    "BRAS": 0.8095080852508545,
+    "iLISI": 0.1676701307296753,
+    "Graph connectivity": 0.5445872034520328,
+    "PCR comparison": 0,
+    "Batch correction": 0.3804413548581407,
+    "Bio conservation": 0.4869346618652344,
+    "Total": 0.4443373390623969
+  }
+}

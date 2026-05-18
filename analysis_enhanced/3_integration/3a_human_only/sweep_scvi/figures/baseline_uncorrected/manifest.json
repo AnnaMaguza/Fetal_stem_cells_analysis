@@ -1,0 +1,21 @@
+{
+  "name": "baseline_uncorrected",
+  "n_cells": 102460,
+  "n_genes": 2000,
+  "n_top_hvgs": 2000,
+  "wallclock_min": 5.703757917881012,
+  "scib": {
+    "Isolated labels": 0.646574079990387,
+    "KMeans NMI": 0.27012878309826166,
+    "KMeans ARI": 0.15173032188986507,
+    "Silhouette label": 0.4999067187309265,
+    "cLISI": 0.9602847099304199,
+    "BRAS": 0.6082970499992371,
+    "iLISI": 5.960464477539063e-08,
+    "Graph connectivity": 0.7190814090728486,
+    "PCR comparison": 0.0,
+    "Batch correction": 0.3318446296691826,
+    "Bio conservation": 0.5057249069213867,
+    "Total": 0.43617279602050507
+  }
+}

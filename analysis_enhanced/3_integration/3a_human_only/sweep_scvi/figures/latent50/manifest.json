@@ -1,0 +1,31 @@
+{
+  "name": "latent50",
+  "config": {
+    "name": "latent50",
+    "n_top_hvgs": 2000,
+    "n_latent": 50,
+    "n_hidden": 256,
+    "gene_likelihood": "nb",
+    "categorical_covariate_keys": [],
+    "continuous_covariate_keys": []
+  },
+  "n_cells": 117208,
+  "n_genes": 3000,
+  "n_epochs_run": null,
+  "wallclock_min": 1.3669331868489583e-06,
+  "device": "mps",
+  "scib": {
+    "Isolated labels": 0.5620955228805542,
+    "KMeans NMI": 0.2762281422809206,
+    "KMeans ARI": 0.09977421215879033,
+    "Silhouette label": 0.5046831369400024,
+    "cLISI": 0.9714784026145935,
+    "BRAS": 0.8288421630859375,
+    "iLISI": 0.1711413860321045,
+    "Graph connectivity": 0.5307912954246141,
+    "PCR comparison": 0,
+    "Batch correction": 0.382693711135664,
+    "Bio conservation": 0.4828518867492676,
+    "Total": 0.44278861650382617
+  }
+}

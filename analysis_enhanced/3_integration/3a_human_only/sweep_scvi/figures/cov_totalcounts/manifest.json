@@ -1,0 +1,33 @@
+{
+  "name": "cov_totalcounts",
+  "config": {
+    "name": "cov_totalcounts",
+    "n_top_hvgs": 2000,
+    "n_latent": 30,
+    "n_hidden": 256,
+    "gene_likelihood": "nb",
+    "categorical_covariate_keys": [],
+    "continuous_covariate_keys": [
+      "total_counts"
+    ]
+  },
+  "n_cells": 102460,
+  "n_genes": 2000,
+  "n_epochs_run": 100,
+  "wallclock_min": 10.520428085327149,
+  "device": "mps",
+  "scib": {
+    "Isolated labels": 0.6233156323432922,
+    "KMeans NMI": 0.2643016051065841,
+    "KMeans ARI": 0.14628942593635968,
+    "Silhouette label": 0.4565523564815521,
+    "cLISI": 0.9601081609725952,
+    "BRAS": 0.7271871566772461,
+    "iLISI": 0.007088899612426758,
+    "Graph connectivity": 0.7613512993475386,
+    "PCR comparison": 0.07400696738667062,
+    "Batch correction": 0.3924085807559705,
+    "Bio conservation": 0.4901134490966797,
+    "Total": 0.45103150176039597
+  }
+}

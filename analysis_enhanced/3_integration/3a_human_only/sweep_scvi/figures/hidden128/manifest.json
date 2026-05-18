@@ -1,0 +1,31 @@
+{
+  "name": "hidden128",
+  "config": {
+    "name": "hidden128",
+    "n_top_hvgs": 2000,
+    "n_latent": 30,
+    "n_hidden": 128,
+    "gene_likelihood": "nb",
+    "categorical_covariate_keys": [],
+    "continuous_covariate_keys": []
+  },
+  "n_cells": 102460,
+  "n_genes": 2000,
+  "n_epochs_run": 100,
+  "wallclock_min": 9.962800216674804,
+  "device": "mps",
+  "scib": {
+    "Isolated labels": 0.6162969470024109,
+    "KMeans NMI": 0.16364236915562133,
+    "KMeans ARI": 0.08524108165782038,
+    "Silhouette label": 0.5014238357543945,
+    "cLISI": 0.9500198364257812,
+    "BRAS": 0.8255931735038757,
+    "iLISI": 2.384185791015625e-07,
+    "Graph connectivity": 0.7508883904671432,
+    "PCR comparison": 0.22538342161273436,
+    "Batch correction": 0.4504663060005831,
+    "Bio conservation": 0.46332483291625975,
+    "Total": 0.4581814221499891
+  }
+}

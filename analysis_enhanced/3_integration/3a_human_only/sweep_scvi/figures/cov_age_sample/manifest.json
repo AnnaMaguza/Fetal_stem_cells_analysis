@@ -1,0 +1,34 @@
+{
+  "name": "cov_age_sample",
+  "config": {
+    "name": "cov_age_sample",
+    "n_top_hvgs": 2000,
+    "n_latent": 30,
+    "n_hidden": 256,
+    "gene_likelihood": "nb",
+    "categorical_covariate_keys": [
+      "age_group",
+      "sample_id"
+    ],
+    "continuous_covariate_keys": []
+  },
+  "n_cells": 102460,
+  "n_genes": 2000,
+  "n_epochs_run": 100,
+  "wallclock_min": 10.469137434164683,
+  "device": "mps",
+  "scib": {
+    "Isolated labels": 0.5755607485771179,
+    "KMeans NMI": 0.28724234388598074,
+    "KMeans ARI": 0.1684838567637206,
+    "Silhouette label": 0.5048431754112244,
+    "cLISI": 0.9195100665092468,
+    "BRAS": 0.9061736464500427,
+    "iLISI": 0.10182559490203857,
+    "Graph connectivity": 0.7761601274741173,
+    "PCR comparison": 0.6043249108434706,
+    "Batch correction": 0.5971210550162561,
+    "Bio conservation": 0.4911280632019043,
+    "Total": 0.533525259927645
+  }
+}
