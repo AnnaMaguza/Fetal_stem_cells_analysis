@@ -1,0 +1,11 @@
+species,Study_name,LGR5+,LGR5-,LGR5_unknown,total
+human,Elementaite_2021,0,0,54600,54600
+human,Holloway_2021,0,0,40757,40757
+human,Ishikawa 2022 (10x),108,0,6995,7103
+mouse,GSE145866 (10x),4815,0,0,4815
+mouse,Grün 2015 GSE62270 (CEL-Seq),288,0,0,288
+mouse,Grün 2016 (CEL-Seq),96,0,0,96
+mouse,Haber 2017 (Smart-Seq2),384,1069,0,1453
+mouse,Simmini 2014 GSE62784,16,0,0,16
+mouse,Yan 2017 GSE92865 (10x),11268,1979,0,13247
+mouse,Yan/Kuo 2017 GSE99457 (10x),1764,1756,2050,5570

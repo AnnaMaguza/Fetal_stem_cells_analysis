@@ -1,0 +1,13 @@
+column,status,pct_missing,nunique
+sample_id,OK,0.0,182
+Study_name,OK,0.0,9
+ArrayExpress_ID,OK,0.0,9
+library_preparation_protocol,OK,0.0,6
+organism_part,OK,0.0,15
+age_group,OK,0.0,5
+gut_region,OK,0.0,3
+cell_states,OK,0.0,10
+celltype,OK,0.0,11
+species,OK,0.0,2
+lgr5_status,OK,0.0,4
+lgr5_label,25197 missing,19.74,11

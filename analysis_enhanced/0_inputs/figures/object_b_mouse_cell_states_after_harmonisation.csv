@@ -1,0 +1,8 @@
+Study_name,Enterocyte,Enterocyte-Progenitor-Early,Enterocyte-Progenitor-Late,Enteroendocrine,Goblet,Lgr5- non-ISC,Paneth,Prox1+ progenitor,Stem cells,TA,Tuft,unknown
+Simmini 2014 GSE62784,0,0,0,0,0,0,0,0,16,0,0,0
+Grün 2016 (CEL-Seq),0,0,0,0,0,0,0,0,96,0,0,0
+Grün 2015 GSE62270 (CEL-Seq),0,0,0,0,0,0,0,0,288,0,0,0
+Haber 2017 (Smart-Seq2),149,112,68,39,118,0,69,0,141,190,99,468
+GSE145866 (10x),0,0,0,0,0,0,0,0,4815,0,0,0
+Yan/Kuo 2017 GSE99457 (10x),0,0,0,0,0,1756,0,1336,2478,0,0,0
+Yan 2017 GSE92865 (10x),0,0,0,0,0,1979,0,0,11268,0,0,0
